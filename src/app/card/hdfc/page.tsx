@@ -8,7 +8,7 @@ import { IoArrowBack } from "react-icons/io5";
 const Hdfc = () => {
   return (
     <div className="flex items-center justify-center ">
-      <div className="w-[300px] rounded-lg overflow-hidden shadow-md duration-700">
+      <div className="w-[300px] rounded-lg overflow-hidden shadow-md duration-700 hover:scale-105">
        
             <Image
               src={hdf}
@@ -21,7 +21,7 @@ const Hdfc = () => {
           <div className="flex flex-col items-center">
            
             <p className="font-semibold text-gray-700">Full-Stack Developer</p>
-            <p className=" text-gray-500">From Apr-To Present</p>
+            <p className=" text-gray-500">-</p>
 
             
           </div>

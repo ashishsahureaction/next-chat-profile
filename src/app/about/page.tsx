@@ -5,6 +5,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+
+
 export const metadata: Metadata = {
   title: "About Me",
   description: "Learn more about Ashish Sahu and his work.",
@@ -15,23 +17,23 @@ export default function Page() {
     <section className="space-y-6 text-justify">
       <H1>About Me</H1>
       <section className="space-y-3" >
-        <H2>Who am I?</H2>
-        <p>
-        My name is Ashish Sahu, and I&apos;m a full-stack software developer based in Canada. With over 8 years of experience in 
+        <H2 className="group hover:text-gray-600 transition-colors duration-300" ><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Who am I?</H2>
+        <p >
+        My name is Ashish Sahu, and I&apos;m a full-stack software developer based in Canada. With over 8+ years of experience in 
         web development, I specialize as a highly motivated front-end developer. I&apos;m currently seeking opportunities within 
         established IT companies where I can leverage my skills and expertise to work on cutting-edge technologies and tackle diverse 
         and challenging projects. Throughout my career, I&apos;ve consistently delivered high-quality work and have showcased numerous 
         projects on my {" "}
-          <a
+          <Link
             href="https://github.com/ashishsahureaction" target="blank"
             className="text-primary hover:underline"
           >
             GitHub profile
-          </a>
-          .
+          </Link>
+          . 
         </p>
         <p>
-          I&apos;m inherently confident and possess a natural curiosity, constantly refining my skills one design problem at a time. 
+        I strongly believe in continuous learning and improving myself, so I try my best to learn in any situation possible, unfavorable or not. I&apos;m inherently confident and possess a natural curiosity, constantly refining my skills one design problem at a time. 
           Over time, I&apos;ve cultivated my abilities to create visually engaging content, demonstrating a commitment to continuous improvement
 
         </p>
@@ -39,11 +41,28 @@ export default function Page() {
           I love to read and travel.</p>
       </section>
       <hr className="border-muted" />
+
+
+      <article className="rounded-xl p-4 ring  sm:p-6 lg:p-8">
+  <div className="flex items-start sm:gap-8">
+    
+    <div>
+      <p className="mt-1 text-sm ">
+     &ldquo;If you ever spot me in the wild, don&apos;t hesitate to say hello! Let&apos;s grab a drink and geek-out over the latest advancements
+      in front-end development or discuss our favorite programming language&ldquo;⚡
+      </p>
+
+
+    </div>
+  </div>
+</article>
+
       <section className="space-y-3">
-        <H2>Skills</H2>
+        <H2 className="group hover:text-gray-600 transition-colors duration-300">
+          <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Skills</H2>
         <p>
           I&apos;m a full-stack web developer specializing in{" "}
-          <strong>React</strong>, <strong>Next.js</strong>, <strong>Angular</strong>, and{" "}
+          <strong>Nextjs</strong>, <strong>React</strong>,  <strong>Angular</strong>, <strong>Redux</strong>, and{" "}
           <strong>Node.js</strong>.
         </p>
         <p>
@@ -58,36 +77,114 @@ export default function Page() {
         </p>
       </section>
       <hr className="border-muted" />
+
+
       <section className="space-y-3">
-        <H2>Side projects</H2>
-        <p>
-          In my free time, I like to work on side projects to keep my skill
-          sharp and try out new tech. Here is a list of my current projects:{" "}
-        </p>
-        <ul className="list-inside list-disc">
-          <li>
-            <a
-              href="https://smartdiary.co" target="blank"
-              className="text-primary hover:underline"
-            >
-              SmartDiary.co
-            </a>{" "}
-            - An AI-powered journaling app
-          </li>
-          <li>
-            <Link
-              href="https://books-ai.app" target="blank"
-              className="text-primary hover:underline"
-            >
-              Books-AI.app
-            </Link>{" "}
-            - An AI book recommendation app
-          </li>
-        </ul>
-      </section>
+  <H2 className="group hover:text-gray-600 transition-colors duration-300">
+    <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Soft Skills
+  </H2>
+  <p>Certain skills I&apos;ve picked along the way that deserve mentioning:</p>
+  <ul className="list-disc pl-5">
+    <li className="mb-3">
+      <strong>Attention to detail:</strong> I take pleasure in creating designs and UIs with careful precision, emphasizing quality over quantity.
+    </li>
+    <li className="mb-3">
+      <strong>Open-source/Collaboration:</strong> I founded a community on GitHub called Communitypro that helps newbie developers learn how to contribute to open-source projects and collaborate in building together. Currently, we are over 400 people strong with room for growth.
+    </li>
+    <li>
+      <strong>Ability to work with little supervision:</strong> I understand people are busy and would love to get things done timely, so I do my best in delivering assignments and projects with little supervision, sparing you the need to closely manage/oversee my work.
+    </li>
+  </ul>
+</section>
+      <hr className="border-muted" />
+
+
+
+      <section className="space-y-3">
+  <H2 className="group hover:text-gray-600 transition-colors duration-300">
+    <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Side projects
+  </H2>
+  <p>
+    In my free time, I like to work on side projects to keep my skills sharp and try out new tech. Here is a list of my current projects:
+  </p>
+  <ul className="list-inside list-disc">
+    <li>
+      <a
+        href="https://smartdiary.co"
+        target="_blank" rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        SmartDiary.co
+      </a>{" "}
+      - An AI-powered journaling app
+    </li>
+    <li>
+      <a
+        href="https://imdb-nextjs-d2u1xvude-ashish-sahus-projects.vercel.app/"
+        target="_blank" rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        IMDB.co
+      </a>{" "}
+      - IMDB Movie search and rating app
+    </li>
+    <li>
+      <Link
+        href="https://books-ai.app"
+        target="_blank" rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        Books-AI.app
+      </Link>{" "}
+      - An AI book recommendation app
+    </li>
+    <li>
+      <a
+        href="https://preeminent-torte-d4200e.netlify.app/"
+        target="_blank" rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        WeatherApp.co
+      </a>{" "}
+      - An Automated-weather forecast app
+    </li>
+    <li>
+      <a
+        href="https://foodtoorderapp.netlify.app/"
+        target="_blank" rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        FoodDelivery.co
+      </a>{" "}
+      - Food outlet search and deliver food at your location.
+    </li>
+    <li>
+      <a
+        href="https://google-next-clone-e3497vcw0-ashish-sahus-projects.vercel.app/"
+        target="_blank" rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        GoogleClone.co
+      </a>{" "}
+      - Google Search Engine on voice command, text, images.
+    </li>
+    <li>
+      <a
+        href="https://dynamic-axolotl-fde4ab.netlify.app/"
+        target="_blank" rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        Profileme.co
+      </a>{" "}
+      - Animated Profile
+    </li>
+  </ul>
+</section>
+
+
       <hr className="border-muted" />
       <section className="space-y-3">
-        <H2>Hobbies</H2>
+        <H2 className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Hobbies</H2>
         <p>
           Besides programming, I love doing sports. I lift weights and do
           Whitewater River Rafting and Tubing. I also enjoy reading books and going out
@@ -106,13 +203,16 @@ export default function Page() {
         />
       </section>
       <section className="space-y-3">
-        <H2>Looking Ahead</H2>
+        <H2 className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Looking Ahead</H2>
         <p>
         As I embark on the next chapter of my career journey, I&apos;m excited about the prospect of leveraging my skills and experience 
         to make a positive impact. Whether it&apos;s driving digital transformation initiatives, spearheading new projects, or collaborating 
         with like-minded professionals, I&apos;m eager to explore opportunities that align with my passion for excellence and innovation.
         </p>
+
+        
       </section>
     </section>
+    
   );
 }

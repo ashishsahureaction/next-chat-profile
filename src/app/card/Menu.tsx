@@ -15,8 +15,9 @@ const frameworkMenu: MenuItem = {
   children: [
     { title: 'Cencora >', route: '/card/cencora' },
     { title: 'Future >', route: '/card/future' },
-    { title: 'Hdfc >', route: '/card/hdfc' },
     { title: 'Skylives >', route: '/card/skylives' },
+    { title: 'Hdfc >', route: '/card/hdfc' }
+   
   ],
 };
 

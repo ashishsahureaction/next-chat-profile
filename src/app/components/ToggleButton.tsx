@@ -19,21 +19,21 @@ const ToggleButton: React.FC = () => {
   return (
     <div>
 <button
-      className={`fixed top-4 left-5 z-50 dark px-5 py-2 text-gray-700 rounded-md focus:outline-none transition-transform ${isToggled ? 'dark' : 'light'}`}
+      className={`fixed top-4 left-5 z-50 dark px-5 py-2  ${isToggled ? 'dark' : 'light'}`}
       onClick={handleToggle}
     >
       {isToggled ?  <RxCross1 size={25}/> : <LuAlignJustify size={25} />  }
     </button>
 
-    <nav className={`fixed top-4 left-0 h-full w-28 dark transition-transform transform ${isToggled ? 'translate-x-0' : '-translate-x-full'}`}>
+    <nav className={`fixed top-4 left-0 h-full w-28 dark   ${isToggled ? 'translate-x-0' : '-translate-x-full'}`}>
       <div className="flex justify-center items-center p-20">
        
       
       <ul className="p-4" >
-        <li><a href="#" className="block py-5 w-20 hover:scale-90" ><IoHome size={20}/></a></li>
-        <li><a href="#" className="block py-5 w-20 hover:scale-90"><FaDownload /></a></li>
-        <li><a href="#" className="block py-5 w-20 hover:scale-90"><FaSuitcase /></a></li>
-        <li><a href="#" className="block py-5 w-20 hover:scale-90"><FaPhoneAlt /></a></li>
+        <li><a href="/" className="block py-5 w-20 hover:scale- hover:text-green-800 " title= "Home" ><IoHome size={20}/></a></li>
+        <li><a href="/ashish_resume.pdf" className="block py-5 w-20 hover:scale-90 hover:text-green-800 "  target='_blank' title= "Download"><FaDownload /></a></li>
+        <li><a href="/projects" className="block py-5 w-20 hover:scale-90  hover:text-green-800  " title= "Profile"><FaSuitcase /></a></li>
+        <li><a href="#" className="block py-5 w-20 hover:scale-90 hover:text-green-800 " title= "Call Me"><FaPhoneAlt /></a></li>
       </ul>
       </div>
     </nav>

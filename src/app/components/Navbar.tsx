@@ -11,10 +11,10 @@ export default function Navbar() {
     <header className="sticky top-0 bg-background">
       <div className="mx-auto flex max-w-3xl flex-wrap justify-between gap-3 px-3 py-4">
         <nav className="space-x-4 font-medium" >
-          <Link href="/" className="hover:text-gray-400">home</Link>
-          <Link href="/about"  className="hover:text-gray-400">about me</Link>
-          <Link href="/social" className="hover:text-gray-400">social media</Link>
-          <Link href="/contact" className="hover:text-gray-400">contact me</Link>
+          <Link href="/" className="hover:text-gray-400 hover:underline">home</Link>
+          <Link href="/about"  className="hover:text-gray-400 hover:underline">about me</Link>
+          <Link href="/social" className="hover:text-gray-400 hover:underline">social media</Link>
+          <Link href="/contact" className="hover:text-gray-400 hover:underline">contact me</Link>
         </nav>
         <div className="flex items-center gap-4">
          
@@ -25,7 +25,10 @@ export default function Navbar() {
           
         </div>
       </div>
-      <ToggleButton/>
+      <div className="hidden md:block">
+      <ToggleButton />
+      </div>
+  
     </header>
     
   );

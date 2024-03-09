@@ -7,7 +7,7 @@ import { IoArrowBack } from "react-icons/io5";
 const Skylives = () => {
   return (
     <div className="h-screen flex items-center justify-center ">
-      <div className="w-[400px] rounded-lg overflow-hidden shadow-md">
+      <div className="w-[300px] rounded-lg overflow-hidden shadow-md hover:scale-105 transition duration-200">
        
             <Image
               src={sky}
@@ -20,12 +20,12 @@ const Skylives = () => {
           <div className="flex flex-col items-center">
            
             <p className="font-semibold text-gray-700">Full-Stack Developer</p>
-            <p className=" text-gray-500">From Apr-To Present</p>
+            <p className=" text-gray-500">Aug 2015 - May 2016</p>
 
             
           </div>
           <p className="text-center justify-center text-gray-500">
-          ReactJs, JavaScript, NodeJs, Redux, Tailwind, HTML5.
+          ReactJs, JavaScript, NodeJs, CSS3, HTML5.
           </p>
           <div className="flex items-center justify-center">
   <span className="mx-2 w-10 h-10 rounded-full flex items-center justify-center bg-blue-500">

@@ -14,8 +14,12 @@ export default function Page() {
   return (
     <section className="space-y-6 text-justify">
       <H1>Social Media</H1>
-      <section className="space-y-3">
-        <H2>My channels</H2>
+      <section className="space-y-3 ">
+      <H2 className="group hover:text-gray-600 transition-colors duration-300">
+        <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>
+        My channels </H2>
+
+      
         <p>
         In today&apos;s interconnected world, social media networking is more crucial than ever! 🌟It&apos;s not just about building connections;
          it&apos;s about nurturing relationships, sharing insights, and staying updated with the latest trends and opportunities in your field. 
@@ -92,8 +96,7 @@ export default function Page() {
         <hr className="border-muted" />
       </section>
       <section className="space-y-3">
-        <H2>Content</H2>
-        <ul className="list-inside list-disc space-y-1">
+        <H2 className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Content</H2><ul className="list-inside list-disc space-y-1">
           <li>
             <a
               href="https://github.com/ashishsahureaction"target="blank" rel="me noreferrer noopener"
@@ -113,13 +116,13 @@ export default function Page() {
             >
               Web dev shorts playlist
             </a>{" "}
-            - All my web development related Youtube Shorts in one playlist.
+            - All my web development related Github Shorts Projects in one list.
           </li>
         </ul>
         <hr className="border-muted" />
       </section>
       <section className="space-y-3">
-        <H2>Linkedin Netwrok</H2>
+        <H2  className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Linkedin Netwrok</H2>
         <p>
           I welcome you to{" "}
           <a
@@ -140,7 +143,7 @@ export default function Page() {
         <hr className="border-muted" />
       </section>
       <section className="space-y-3">
-        <H2>Business inquiries</H2>
+        <H2  className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Business inquiries</H2>
         <p>
         Let&apos;s connect and explore possibilities together! Feel free to reach out to me to discuss collaborations, 
         and opportunities, or simply to exchange insights on the latest industry trends., please reach out me via email at{" "}
@@ -152,33 +155,34 @@ export default function Page() {
           </a>
         </p>
         <p>
-          I&apos;ve worked with many different companies in the past, including{" "}
+        In my professional journey, I&apos;ve had the opportunity to collaborate with several distinguished companies, 
+        including{" "}
           <a
             href="https://www.innomar-strategies.com/"target="blank" rel="me noreferrer noopener"
             className="text-primary hover:underline"
           >
-            Innomar
+            Cencora
           </a>
           ,{" "}
           <a href="https://www.generali.co.uk/" 
           target="blank" rel="me noreferrer noopener"className="text-primary hover:underline">
-            Generali
+            Generali Health
           </a>
           ,{" "}
           <a
             href="https://skyylives.com/banking-finance-solutions/" target="blank" rel="me noreferrer noopener"
             className="text-primary hover:underline"
           >
-            Skyylives
+            Skyylives Infotech
           </a>
           ,{" "}
           <a
             href="https://www.hdfcbank.com/" target="blank" rel="me noreferrer noopener"
             className="text-primary hover:underline"
           >
-            HDFC
-          </a>{" "}
-          and many more.
+            HDFC Bank
+          </a>.{" "}
+    
         </p>
         
 

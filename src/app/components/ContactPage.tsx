@@ -47,7 +47,6 @@ const ContactPage: React.FC = () => {
   };
   
 
-
   return (
     <div className="max-w-md mx-auto">
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -106,12 +105,18 @@ const ContactPage: React.FC = () => {
           ></textarea>
         </div>
         <div>
-          <button type="submit" className="text-black hover:underline bg-gray-300 py-2 px-4 rounded-md 
+          <button type="submit" className="hover:underline hover:scale-95  border py-2 px-4 rounded-md 
           ">Send</button>
         </div>
+    
+        
+
+        
       </form>
     </div>
   );
 };
 
 export default ContactPage;
+
+
