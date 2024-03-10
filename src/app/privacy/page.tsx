@@ -2,7 +2,7 @@
 import { H1 } from "../components/ui/H1";
 import { H2 } from "../components/ui/H2";
 import { H3 } from "../components/ui/H3";
-
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -84,7 +84,7 @@ export default function Page() {
         <H2>Contact Us</H2>
         <p>
           If you have any questions about this Privacy Policy, please contact us
-          at ashishsahu15k@gmail.com.
+          at : <Link href={"https://mail.google.com/"} className="text-primary hover:underline" >ashishsahu15k@gmail.com</Link> .
         </p>
       </div>
     </section>

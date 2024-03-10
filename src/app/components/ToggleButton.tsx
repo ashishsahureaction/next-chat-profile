@@ -30,10 +30,10 @@ const ToggleButton: React.FC = () => {
        
       
       <ul className="p-4" >
-        <li><a href="/" className="block py-5 w-20 hover:scale- hover:text-green-800 " title= "Home" ><IoHome size={20}/></a></li>
-        <li><a href="/ashish_resume.pdf" className="block py-5 w-20 hover:scale-90 hover:text-green-800 "  target='_blank' title= "Download"><FaDownload /></a></li>
-        <li><a href="/projects" className="block py-5 w-20 hover:scale-90  hover:text-green-800  " title= "Profile"><FaSuitcase /></a></li>
-        <li><a href="#" className="block py-5 w-20 hover:scale-90 hover:text-green-800 " title= "Call Me"><FaPhoneAlt /></a></li>
+        <li><a href="/" className="block py-5 w-20 hover:scale- hover:text-orange-600 " title= "Home" ><IoHome size={20}/></a></li>
+        <li><a href="/ashish_resume.pdf" className="block py-5 w-20 hover:scale-90 hover:text-orange-600 "  target='_blank' title= "Download"><FaDownload /></a></li>
+        <li><a href="/projects" className="block py-5 w-20 hover:scale-90  hover:text-orange-600  " title= "Project"><FaSuitcase /></a></li>
+        <li><a href="#" className="block py-5 w-20 hover:scale-90 hover:text-orange-600 " title= "Call Me"><FaPhoneAlt /></a></li>
       </ul>
       </div>
     </nav>

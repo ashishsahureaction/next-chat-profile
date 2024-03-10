@@ -34,13 +34,18 @@ const Page = () => {
               <p className="mt-4 text-justify">
               The book app facilitates users in discovering, purchasing, and reading a wide range of books across various genres and topics.
               </p>
+              <Link href="https://books-ai.app" target="_blank" rel="noreferrer" className="relative flex items-center justify-center w-32 h-[46px] mt-4 rounded
+               px-10 py-3 border border-gray-800 text-sm font-medium hover:scale-95 bg-orange-600  shadow-2xl transition-all 
+               duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear
+                hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">
+  <span className="relative z-10">Explore</span>
+  <span className="ml-1"><IoMdArrowForward  size={18}  /></span>
+</Link>
 
-              <Link
-                href="https://books-ai.app"
-                className="mt-4 inline-block rounded px-10 py-3 text-sm font-medium transition hover:border"
-              >
-                Explore 
-              </Link>
+
+
+
+
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { H2 } from '@/app/components/ui/H2';
 import { Metadata } from "next";
 import Link from "next/link";
 import { RxExternalLink } from "react-icons/rx";
+import { IoMdArrowForward } from "react-icons/io";
 
 
 export const metadata: Metadata = {
@@ -33,13 +34,15 @@ const Page = () => {
               <p className="mt-4 text-justify">
               Provide a brief introduction about myself, highlighten my key skills and experiences.
               </p>
+              <Link href="https://dynamic-axolotl-fde4ab.netlify.app/" target="_blank" rel="noreferrer" className="relative flex items-center justify-center w-32 h-[46px] mt-4 rounded
+               px-10 py-3 border border-gray-800 text-sm font-medium hover:scale-95 bg-orange-600  shadow-2xl transition-all 
+               duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear
+                hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">
+  <span className="relative z-10">Explore</span>
+  <span className="ml-1"><IoMdArrowForward  size={18}  /></span>
+</Link>
 
-              <Link
-                href="https://dynamic-axolotl-fde4ab.netlify.app/" target="_blank"
-                className="mt-4 inline-block rounded px-10 py-3 text-sm font-medium transition hover:border"
-              >
-                Explore
-              </Link>
+
             </div>
           </div>
         </div>

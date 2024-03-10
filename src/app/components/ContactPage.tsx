@@ -105,8 +105,11 @@ const ContactPage: React.FC = () => {
           ></textarea>
         </div>
         <div>
-          <button type="submit" className="hover:underline hover:scale-95  border py-2 px-4 rounded-md 
-          ">Send</button>
+<button className="relative flex h-[41px] w-18 items-center hover:underline hover:scale-95 border-2  border-gray-800 py-2 px-4 rounded-md  
+justify-center overflow-hidden shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full
+ before:bg-orange-600 before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-56 hover:before:w-56">
+      <span className="relative z-10">Send</span>
+    </button>
         </div>
     
         
