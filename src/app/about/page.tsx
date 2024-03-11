@@ -81,7 +81,7 @@ export default function Page() {
 
       <section className="space-y-3">
   <H2 className="group hover:text-gray-600 transition-colors duration-300">
-    <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Soft Skills
+    <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Soft-Skills
   </H2>
   <p>Certain skills I&apos;ve picked along the way that deserve mentioning:</p>
   <ul className="list-disc pl-5">
@@ -102,7 +102,7 @@ export default function Page() {
 
       <section className="space-y-3">
   <H2 className="group hover:text-gray-600 transition-colors duration-300">
-    <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Side projects
+    <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Side-Projects
   </H2>
   <p>
     In my free time, I like to work on side projects to keep my skills sharp and try out new tech. Here is a list of my current projects:

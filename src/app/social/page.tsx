@@ -122,7 +122,7 @@ export default function Page() {
         <hr className="border-muted" />
       </section>
       <section className="space-y-3">
-        <H2  className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Linkedin Netwrok</H2>
+        <H2  className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Linkedin Network</H2>
         <p>
           I welcome you to{" "}
           <a
@@ -143,7 +143,7 @@ export default function Page() {
         <hr className="border-muted" />
       </section>
       <section className="space-y-3">
-        <H2  className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Business inquiries</H2>
+        <H2  className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Business Inquiries</H2>
         <p>
         Let&apos;s connect and explore possibilities together! Feel free to reach out to me to discuss collaborations, 
         and opportunities, or simply to exchange insights on the latest industry trends., please reach out me via email at{" "}

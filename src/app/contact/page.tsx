@@ -18,7 +18,8 @@ export default function Page() {
   return (
     <section className="space-y-6">
 
-      <H1 className="group hover:text-gray-600 transition-colors duration-300"> <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>contact me</H1>
+      <H1 className="group hover:text-gray-600 transition-colors duration-300"> 
+      <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Contact me</H1>
       <section className="space-y-3">
         <p>
         I am interested in lucrative opportunities - especially on ambitious
