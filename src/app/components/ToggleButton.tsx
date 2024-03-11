@@ -19,7 +19,7 @@ const ToggleButton: React.FC = () => {
   return (
     <div>
 <button
-      className={`fixed top-4 left-5 z-50 dark px-5 py-2  ${isToggled ? 'dark' : 'light'}`}
+      className={`fixed top-4 left-5 z-50 dark px-5 py-2 hover:text-orange-600  ${isToggled ? 'dark' : 'light'}`}
       onClick={handleToggle}
     >
       {isToggled ?  <RxCross1 size={25}/> : <LuAlignJustify size={25} />  }

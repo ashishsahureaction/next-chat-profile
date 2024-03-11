@@ -10,7 +10,7 @@ export default function AIChatButton() {
   return (
     <>
       <button onClick={() => setChatBoxOpen(true)}>
-        <Bot size={24} />
+        <div className="text-orange-600 hover:scale-110"><Bot size={24} /></div>
       </button>
       <AIChatBox open={chatBoxOpen} onClose={() => setChatBoxOpen(false)} />
     </>

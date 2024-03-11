@@ -46,7 +46,7 @@ export default function AIChatBox({ open, onClose }: AIChatBoxProps) {
       )}
     >
       <button onClick={onClose} className="mb-1 ms-auto block  group cursor-pointer outline-none hover:rotate-90 duration-300 ">
-        <XCircle size={30} className="rounded-full bg-background  stroke-blue-900 fill-none group-hover:fill-gray-100" />
+        <XCircle size={30} className="rounded-full bg-background  stroke-orange-600 fill-none group-hover:fill-gray-100" />
       </button>
 
 

@@ -1,35 +1,48 @@
+'use client'
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 import ThemeToggle from "./ThemeToggle";
 import AIChatButton from "./AIChatButton";
 import ToggleButton from "./ToggleButton";
 
+interface NavLinkProps {
+  href: string;
+  text: string;
+  isActive: boolean;
+}
 
-
-
-export default function Navbar() {
+const NavLink: React.FC<NavLinkProps> = ({ href, text, isActive }) => {
   return (
-    <header className="sticky top-0 bg-background">
+    <Link href={href} passHref legacyBehavior>
+      <a className={`hover:text-orange-600 hover:underline ${isActive ? 'text-orange-600 font-bold' : 'text-gray-500'}`}>
+        {text}
+      </a>
+    </Link>
+  );
+};
+
+const Navbar: React.FC = () => {
+  const pathname = usePathname();
+
+  return (
+    <header className="sticky top-0 bg-gray-200  py-0 dark:bg-gray-950 ">
       <div className="mx-auto flex max-w-3xl flex-wrap justify-between gap-3 px-3 py-4">
-        <nav className="space-x-4 font-medium" >
-          <Link href="/" className="hover:text-gray-400 hover:underline">Home</Link>
-          <Link href="/about"  className="hover:text-gray-400 hover:underline ">About</Link>
-          <Link href="/social" className="hover:text-gray-400 hover:underline">Social</Link>
-          <Link href="/contact" className="hover:text-gray-400 hover:underline">Contact</Link>
+        <nav className="space-x-4 font-medium">
+          <NavLink href="/" text="Home" isActive={pathname === '/'} />
+          <NavLink href="/about" text="About" isActive={pathname === '/about'} />
+          <NavLink href="/social" text="Social" isActive={pathname === '/social'} />
+          <NavLink href="/contact" text="Contact" isActive={pathname === '/contact'} />
         </nav>
         <div className="flex items-center gap-4">
-         
-          <AIChatButton/>
-          
-          <div className="hover:text-gray-400"><ThemeToggle/></div>
-          
-          
+          <AIChatButton />
+          <div className="hover:text-orange-600 hover:scale-95"><ThemeToggle/></div>
         </div>
       </div>
       <div className="hidden md:block">
-      <ToggleButton />
+        <ToggleButton />
       </div>
-  
     </header>
-    
   );
-}
+};
+
+export default Navbar;
