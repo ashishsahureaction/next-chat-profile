@@ -139,15 +139,15 @@ export default function Page() {
       </div>
       </Link>
 
-      <Link href={"https://smartdiary.co"} > 
+      <Link href={"projects/blog"} > 
       <div className="flex items-start gap-1 text-center justify-center hover:scale-95">
       
       <AiOutlineAlipay  size={40} color="purple" className="text-6xl  " />
         <div>
-          <h2 className="text-md font-bold">Smart Dairi.co</h2>
+          <h2 className="text-md font-bold">Mern Blog App</h2>
 
           <p className="mt-1 text-sm  ">
-          An AI powered journaling app
+          Share your story with the world.
           </p>
         </div>
       </div>
