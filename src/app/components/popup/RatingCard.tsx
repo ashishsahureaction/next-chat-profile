@@ -1,4 +1,3 @@
-
 'use client'
 import React, { useState, useEffect } from 'react';
 
@@ -25,6 +24,7 @@ const RatingCard: React.FC<RatingCardProps> = ({ handleRating }) => {
         handleRating(rating);
         setShowRating(false);
     };
+
 
     return (
         <>

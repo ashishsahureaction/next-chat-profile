@@ -39,13 +39,10 @@ const Page = () => {
                duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear
                 hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">
   <span className="relative z-10">Explore</span>
+
+  
   <span className="ml-1"><IoMdArrowForward  size={18}  /></span>
 </Link>
-
-
-
-
-
             </div>
           </div>
         </div>
