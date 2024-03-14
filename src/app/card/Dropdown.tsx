@@ -25,13 +25,13 @@ export default function Dropdown(props: Props) {
   return (
     <>
       <div className="relative">
-        <button
+        <button className='flex items-center rounded px-2 pb-2 pt-2.5 text-white text-xs uppercase bg-orange-600 hover:scale-95 '
           onClick={toggle}
         >
           {item.title}
         </button>
         <div
-          className={` text-right absolute w-[200px] min-h-[250px] flex flex-col justify-start py-2 rounded-md ${transClass}`}
+          className={`w-full whitespace-nowrap px-4 py-2 text-sm font-normal text-right absolute flex flex-col justify-start rounded-md ${transClass}`}
         >
           {menuItems.map((item) => (
             <Link

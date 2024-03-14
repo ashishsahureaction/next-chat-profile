@@ -14,10 +14,11 @@ interface NavLinkProps {
 const NavLink: React.FC<NavLinkProps> = ({ href, text, isActive }) => {
   return (
     <Link href={href} passHref legacyBehavior>
-      <a className={`hover:text-orange-600 hover:underline ${isActive ? 'text-orange-600 font-bold' : 'text-gray-500'}`}>
-        {text}
-      </a>
-    </Link>
+    <a className={`relative inline-block ${isActive ? 'text-orange-600 font-bold' : 'text-gray-500'}`}>
+      {text}
+      <span className={`absolute bottom-0 left-0 w-full h-0.5   bg-gradient-to-r from-orange-500 to-orange-600 transform scale-x-0 transition duration-300 ease-in origin-left ${isActive ? 'scale-x-100' : ''}`} />
+    </a>
+  </Link>
   );
 };
 

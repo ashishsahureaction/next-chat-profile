@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="space-y-16 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat px-1 py-8" >
+    <section className="space-y-16 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat px-1 py-8 " >
       <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
         <div className="space-y-3">
           <H1 className="text-center sm:text-start">Hi, I&apos;m Ashish 👋</H1>
           <Name/>
-          <p className="text-center sm:text-start">
+          <p className="text-center sm:text-start ">
             I&apos;m a self-driven full-stack developer seeking opportunities in an established 
             IT firm to work on cutting-edge projects with the latest technologies.
           </p>
@@ -34,10 +34,10 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="space-y-3 text-center">
+      <section className="space-y-3 text-center ">
         <H2>Ask the chatbot anything about me</H2>
         <p>
-          Click the little <Bot size={30} className="inline pb-1 animate-pulse text-orange-600" /> icon in the top bar
+          Click the little <Bot size={30} className="inline pb-1 animate-pulse text-orange-600 shadow-lg inset-shadow-lg" /> icon in the top bar
           to activate the AI chat. You can and ask the chatbot any question about me
           and it will find the relevant info on this website. The bot can even
           provide links to pages you&apos;re looking for and it boasts both draggable and adjustable functionality.

@@ -38,13 +38,13 @@ export default function Page() {
       </section>
       <hr className="border-muted" />
       
-      <section className="space-y-3">
-  <div className="max-w-screen-xl sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-    <div className="mt-2 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+      <section className="space-y-3 shadow-lg inset-shadow-lg ">
+  <div className="max-w-screen-xl sm:px-6 sm:py-12 lg:px-8 lg:py-16 flex justify-center shadow-lg inset-shadow-lg">
+    <div className="mt-2 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3 ">
       
     <Link href="/projects/dairy" > 
  
-      <div className="flex items-start gap-1 text-center justify-center hover:scale-95">
+      <div className="flex items-start gap-1 text-center justify-center hover:scale-95 shadow-lg inset-shadow-lg">
       <GiCow  size={40} color="gold" className="text-6xl  " />
         <div>
           <h2 className="text-md font-bold">Smart Dairi.co</h2>
@@ -58,7 +58,7 @@ export default function Page() {
 
 
       <Link href="/projects/movie" > 
-      <div className="flex items-start gap-1 text-center justify-center  hover:scale-95">
+      <div className="flex items-start gap-1 text-center justify-center  hover:scale-95 shadow-lg inset-shadow-lg">
       
       <PiVideoFill size={40} color="skyblue" className="text-6xl" />
         <div>
@@ -73,7 +73,7 @@ export default function Page() {
 
 
       <Link href="/projects/book" > 
-      <div className="flex items-start gap-1 text-center justify-center  hover:scale-95">
+      <div className="flex items-start gap-1 text-center justify-center  hover:scale-95 shadow-lg inset-shadow-lg">
       <ImBook size={40} color="red" className="text-6xl  " />
         <div>
           <h2 className="text-md font-bold">Books-AI.co</h2>
@@ -86,7 +86,7 @@ export default function Page() {
       </Link>
 
       <Link href="/projects/weather" > 
-      <div className="flex items-start gap-1 text-center justify-center  hover:scale-95">
+      <div className="flex items-start gap-1 text-center justify-center  hover:scale-95 shadow-lg inset-shadow-lg">
       <TiWeatherPartlySunny size={40} color="blue" className="text-6xl  " />
         <div>
           <h2 className="text-md font-bold">WeatherApp.co</h2>
@@ -99,7 +99,7 @@ export default function Page() {
       </Link>
 
     <Link href={"/projects/food"} > 
-      <div className="flex items-start gap-1 text-center justify-center hover:scale-95">
+      <div className="flex items-start gap-1 text-center justify-center hover:scale-95 shadow-lg inset-shadow-lg">
 
       <MdOutlineFastfood size={40} color="green" className="text-6xl  " />
         <div>
@@ -113,7 +113,7 @@ export default function Page() {
       </Link>
 
       <Link href={"/projects/google"} > 
-      <div className="flex items-start gap-1 text-center justify-center  hover:scale-95">
+      <div className="flex items-start gap-1 text-center justify-center  hover:scale-95 shadow-lg inset-shadow-lg ">
       <FcGoogle size={40} color="orange" className="text-6xl " />
       
         <div>
@@ -127,7 +127,7 @@ export default function Page() {
       </Link>
 
       <Link href={"/projects/myprofile"} > 
-      <div className="flex items-start gap-1 text-center justify-center hover:scale-95">
+      <div className="flex items-start gap-1 text-center justify-center hover:scale-95 shadow-lg inset-shadow-lg">
       <SiGoogledatastudio size={37} color="pink" className="text-6xl  " />
         <div>
           <h2 className="text-md font-bold">Profileme.co</h2>
@@ -140,7 +140,7 @@ export default function Page() {
       </Link>
 
       <Link href={"projects/blog"} > 
-      <div className="flex items-start gap-1 text-center justify-center hover:scale-95">
+      <div className="flex items-start gap-1 text-center justify-center hover:scale-95 shadow-lg inset-shadow-lg">
       
       <AiOutlineAlipay  size={40} color="purple" className="text-6xl  " />
         <div>

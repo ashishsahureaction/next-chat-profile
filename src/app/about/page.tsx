@@ -19,9 +19,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <section className="space-y-6 text-justify">
+    <section className="space-y-6 text-justify ">
       <H1>About Me</H1>
-      <section className="space-y-3" >
+      <section className="space-y-3 shadow-lg inset-shadow-lg" >
         <H2 className="group hover:text-gray-600 transition-colors duration-300" ><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Who am I?</H2>
         <p >
         My name is Ashish Sahu, and I&apos;m a full-stack software developer based in Canada. With over 8+ years of experience in 
@@ -51,8 +51,8 @@ export default function Page() {
       <article className="rounded-xl p-4 ring  sm:p-6 lg:p-8">
   <div className="flex items-start sm:gap-8">
     
-    <div>
-      <p className="mt-1 text-sm ">
+    <div >
+      <p className="mt-1 text-sm  ">
      &ldquo;If you ever spot me in the wild, don&apos;t hesitate to say hello! Let&apos;s grab a drink and geek-out over the latest advancements
       in front-end development or discuss our favorite programming language&ldquo;⚡
       </p>
@@ -62,8 +62,8 @@ export default function Page() {
   </div>
 </article>
 
-      <section className="space-y-3">
-        <H2 className="group hover:text-gray-600 transition-colors duration-300">
+      <section className="space-y-3 shadow-lg inset-shadow-lg ">
+        <H2 className="group hover:text-gray-600 transition-colors duration-300 ">
           <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Skills</H2>
         <p>
           I&apos;m a full-stack web developer specializing in{" "}
@@ -84,7 +84,7 @@ export default function Page() {
       <hr className="border-muted" />
 
 
-      <section className="space-y-3">
+      <section className="space-y-3 shadow-lg inset-shadow-lg">
   <H2 className="group hover:text-gray-600 transition-colors duration-300">
     <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Soft-Skills
   </H2>
@@ -105,19 +105,19 @@ export default function Page() {
 
 
 
-      <section className="space-y-3">
+      <section className="space-y-3 shadow-lg inset-shadow-lg">
   <H2 className="group hover:text-gray-600 transition-colors duration-300">
     <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Side-Projects
   </H2>
   <p>
     In my free time, I like to work on side projects to keep my skills sharp and try out new tech. Here is a list of my current projects:
   </p>
-  <ul className="list-inside list-disc">
+  <ul className="list-inside list-disc space-y-1 shadow-lg inset-shadow-lg">
     <li>
       <a
         href="https://smartdiary.co"
         target="_blank" rel="noopener noreferrer"
-        className="text-primary hover:underline"
+        className="text-primary hover:underline  "
       >
         SmartDiary.co
       </a>{" "}
@@ -199,7 +199,7 @@ export default function Page() {
 
       <hr className="border-muted " />
 
-      <section className="space-y-3">
+      <section className="space-y-3 shadow-lg inset-shadow-lg">
         <H2 className="group hover:text-gray-600 transition-colors duration-300">
           <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Hobbies</H2>
         <p>
@@ -216,11 +216,11 @@ export default function Page() {
         <Image
           src={bjj}
           alt="whitewater river rafting group photo"
-          className="rounded-md"
+          className="rounded-md shadow-lg inset-shadow-lg"
         />
 
-       
-<div className="sticky top-0 flex flex-col items-center justify-center h-screen ">
+      <div className="relative shadow-lg inset-shadow-lg">
+      <div className="sticky top-0 flex flex-col items-center justify-center h-screen ">
     <Image
       src={tag}
       alt="whitewater river rafting group photo"
@@ -250,12 +250,14 @@ export default function Page() {
     />
   </div>
 
+        </div> 
+
       </section>
 
 
       <hr className="border-muted" />
 
-      <section className="space-y-3">
+      <section className="space-y-3 shadow-lg inset-shadow-lg">
         <H2 className="group hover:text-gray-600 transition-colors duration-300">
           <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Looking Ahead</H2>
         <p>

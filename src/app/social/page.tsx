@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <section className="space-y-6 text-justify">
+    <section className="space-y-6 text-justify shadow-lg inset-shadow-lg">
       <H1>Social Media</H1>
-      <section className="space-y-3 ">
+      <section className="space-y-3">
       <H2 className="group hover:text-gray-600 transition-colors duration-300">
         <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>
         My channels </H2>
@@ -27,7 +27,7 @@ export default function Page() {
         So, let&apos;s connect, learn, and grow together! 💡 #Networking #Community #Growth.
         </p>
         <p>Links to all my social accounts:</p>
-        <ul className="list-inside list-disc space-y-1">
+        <ul className="list-inside list-disc space-y-1 ">
           <li>
             <a
               href="https://www.youtube.com/" target="blank" rel="me noreferrer noopener"
@@ -95,7 +95,7 @@ export default function Page() {
         </ul>
         <hr className="border-muted" />
       </section>
-      <section className="space-y-3">
+      <section className="space-y-3 ">
         <H2 className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Content</H2><ul className="list-inside list-disc space-y-1">
           <li>
             <a
@@ -121,7 +121,7 @@ export default function Page() {
         </ul>
         <hr className="border-muted" />
       </section>
-      <section className="space-y-3">
+      <section className="space-y-3 ">
         <H2  className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Linkedin Network</H2>
         <p>
           I welcome you to{" "}
@@ -142,7 +142,7 @@ export default function Page() {
         </p>
         <hr className="border-muted" />
       </section>
-      <section className="space-y-3">
+      <section className="space-y-3 ">
         <H2  className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Business Inquiries</H2>
         <p>
         Let&apos;s connect and explore possibilities together! Feel free to reach out to me to discuss collaborations, 
@@ -188,7 +188,7 @@ export default function Page() {
 
         <p>If you want to get something done, you come to me — everyone knows that..!!</p>
       </section>
-      <div className="text-primary hover:underline flex justify-end" ><Menu/></div>
+      <div className="flex justify-end" ><Menu/></div>
       
     </section>
   );

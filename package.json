@@ -21,6 +21,7 @@
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.0.8",
     "g": "^2.0.1",
+    "gsap": "^3.12.5",
     "langchain": "^0.1.21",
     "lucide": "^0.354.0",
     "lucide-react": "^0.338.0",
