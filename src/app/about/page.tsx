@@ -1,4 +1,9 @@
 import bjj from "@/assets/bjj.jpg";
+import tag from "@/assets/tag.jpg";
+import tag1 from "@/assets/tag1.jpg";
+import tag2 from "@/assets/tag2.jpg";
+import tag3 from "@/assets/tag3.jpg";
+
 import { H1 } from "../components/ui/H1";
 import { H2 } from "../components/ui/H2";
 import { Metadata } from "next";
@@ -178,13 +183,25 @@ export default function Page() {
       </a>{" "}
       - Animated Profile
     </li>
+    <li>
+      <a
+        href="https://mern-next-blog-x6of.vercel.app/"
+        target="_blank" rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        Mern-Blog App
+      </a>{" "}
+      - Share to the World
+    </li>
   </ul>
 </section>
 
 
-      <hr className="border-muted" />
+      <hr className="border-muted " />
+
       <section className="space-y-3">
-        <H2 className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Hobbies</H2>
+        <H2 className="group hover:text-gray-600 transition-colors duration-300">
+          <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Hobbies</H2>
         <p>
           Besides programming, I love doing sports. I lift weights and do
           Whitewater River Rafting and Tubing. I also enjoy reading books and going out
@@ -201,9 +218,46 @@ export default function Page() {
           alt="whitewater river rafting group photo"
           className="rounded-md"
         />
+
+       
+<div className="sticky top-0 flex flex-col items-center justify-center h-screen ">
+    <Image
+      src={tag}
+      alt="whitewater river rafting group photo"
+      className="rounded-md"
+    />
+  </div>
+  <div className="sticky top-0 flex flex-col items-center justify-center h-screen">
+    <Image
+      src={tag1}
+      alt="whitewater river rafting group photo"
+      className="rounded-md"
+    />
+  </div>
+  <div className="sticky top-0 flex flex-col items-center justify-center h-screen">
+    <Image
+      src={tag2}
+      alt="whitewater river rafting group photo"
+      className="rounded-md"
+    />
+  </div>
+  <div className="sticky flex flex-col items-center justify-center h-screen">
+  
+    <Image
+      src={tag3} 
+      alt="whitewater river rafting group photo"
+      className="rounded-md"
+    />
+  </div>
+
       </section>
+
+
+      <hr className="border-muted" />
+
       <section className="space-y-3">
-        <H2 className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Looking Ahead</H2>
+        <H2 className="group hover:text-gray-600 transition-colors duration-300">
+          <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Looking Ahead</H2>
         <p>
         As I embark on the next chapter of my career journey, I&apos;m excited about the prospect of leveraging my skills and experience 
         to make a positive impact. Whether it&apos;s driving digital transformation initiatives, spearheading new projects, or collaborating 
@@ -212,6 +266,10 @@ export default function Page() {
 
         
       </section>
+
+
+      
+
     </section>
     
   );

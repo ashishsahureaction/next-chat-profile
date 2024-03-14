@@ -38,9 +38,9 @@ export default function Home() {
         <H2>Ask the chatbot anything about me</H2>
         <p>
           Click the little <Bot size={30} className="inline pb-1 animate-pulse text-orange-600" /> icon in the top bar
-          to activate the AI chat. You can ask the chatbot any question about me
+          to activate the AI chat. You can and ask the chatbot any question about me
           and it will find the relevant info on this website. The bot can even
-          provide links to pages you&apos;re looking for.
+          provide links to pages you&apos;re looking for and it boasts both draggable and adjustable functionality.
         </p>
         <Popup/>
       </section>
