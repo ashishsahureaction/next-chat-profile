@@ -48,7 +48,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="space-y-6 text-justify">
+      <section className="space-y-6 text-justify mx-auto max-w-3xl px-3 py-10">
         <section className="space-y-3">
           <H2 className="group hover:text-gray-600 transition-colors duration-300">
             <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Overview

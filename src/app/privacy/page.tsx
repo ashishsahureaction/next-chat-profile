@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <section className="space-y-6">
+    <section className="space-y-6 mx-auto max-w-3xl px-3 py-10 ">
       <div className="space-y-3">
         <H1>Privacy Policy</H1>
         <p>Last Updated: Feb 2024</p>

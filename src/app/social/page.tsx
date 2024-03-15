@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <section className="space-y-6 text-justify shadow-lg inset-shadow-lg">
+    <section className="space-y-6 text-justify shadow-lg inset-shadow-lg mx-auto max-w-3xl px-3 py-10 ">
       <H1>Social Media</H1>
       <section className="space-y-3">
       <H2 className="group hover:text-gray-600 transition-colors duration-300">
@@ -188,7 +188,7 @@ export default function Page() {
 
         <p>If you want to get something done, you come to me — everyone knows that..!!</p>
       </section>
-      <div className="flex justify-end" ><Menu/></div>
+      <div className="flex justify-end " ><Menu/></div>
       
     </section>
   );

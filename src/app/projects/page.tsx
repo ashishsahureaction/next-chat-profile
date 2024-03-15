@@ -25,7 +25,7 @@ export default function Page() {
 
   return (
     <div>
-    <section className="space-y-6 text-justify">
+    <section className="space-y-6 text-justify mx-auto max-w-3xl px-3 py-10 ">
       <H1>Projects</H1>
       <section className="space-y-3">
         <p>

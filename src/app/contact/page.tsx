@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Page() {
 
   return (
-    <section className="space-y-6 shadow-lg inset-shadow-lg">
+    <section className="space-y-6 shadow-lg inset-shadow-lg mx-auto max-w-3xl px-3 py-10 ">
 
       <H1 className="group hover:text-gray-600 transition-colors duration-300"> 
       <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Contact me</H1>

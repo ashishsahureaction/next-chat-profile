@@ -6,6 +6,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Name from "./components/Name";
 import Popup from "./components/popup/Popup";
+import Slide from "./components/Slide";
+import Format from "./components/Format";
+import Quicker from "./components/Quicker"
+import Feature from "./components/Feature"
+
 
 
 export const metadata: Metadata = {
@@ -14,6 +19,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
+    <>
+    <div className="flex flex-col items-center justify-start sm:my-8 sm:py-1  mx-auto max-w-3xl px-3 py-10 " >
     <section className="space-y-16 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat px-1 py-8 " >
       <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
         <div className="space-y-3">
@@ -34,6 +41,7 @@ export default function Home() {
           />
         </div>
       </section>
+      </section>
       <section className="space-y-3 text-center ">
         <H2>Ask the chatbot anything about me</H2>
         <p>
@@ -44,7 +52,35 @@ export default function Home() {
         </p>
         <Popup/>
       </section>
+
+    </div>
+    
+
+      <hr></hr>
+      <section className="space-y-3 text-center ">
+      <Feature/>
+   </section>
+  
+      <hr></hr>
+      <section className="space-y-3 text-center ">
+    
+       <Quicker/>
+       
+      </section>
+
+      <hr></hr>
+      <section className="space-y-3 text-center ">
+           <Format/>
+      </section>
+
+      <hr></hr>
+      <section className="space-y-3 text-center mx-auto max-w-3xl px-3 py-10  ">
+        <H2>Project @ A Glance</H2>
+       <Slide/>
+       
+      </section>
      
-    </section>
+</>
+
   );
 }
