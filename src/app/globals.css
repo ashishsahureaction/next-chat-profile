@@ -64,7 +64,9 @@ body::-webkit-scrollbar {
     
   }
 }
-
+.menu_item.active{
+  transform:tranlate (100%,-100%)
+ }
 
 
 

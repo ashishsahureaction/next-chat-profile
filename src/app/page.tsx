@@ -10,6 +10,9 @@ import Slide from "./components/Slide";
 import Format from "./components/Format";
 import Quicker from "./components/Quicker"
 import Feature from "./components/Feature"
+import Greeting from "./components/Greeting";
+import String from "./components/String";
+import LatestArticle from "./components/LatestArticle";
 
 
 
@@ -18,13 +21,16 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+
+  const currentTime = new Date();
   return (
     <>
     <div className="flex flex-col items-center justify-start sm:my-8 sm:py-1  mx-auto max-w-3xl px-3 py-10 " >
     <section className="space-y-16 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat px-1 py-8 " >
       <section className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
         <div className="space-y-3">
-          <H1 className="text-center sm:text-start">Hi, I&apos;m Ashish 👋</H1>
+        <H1 className="text-center sm:text-start">Hi, <span><Greeting time={currentTime}/></span> </H1>
+          <H2 className="text-center sm:text-start">I&apos;m Ashish 👋</H2>
           <Name/>
           <p className="text-center sm:text-start ">
             I&apos;m a self-driven full-stack developer seeking opportunities in an established 
@@ -56,26 +62,38 @@ export default function Home() {
     </div>
     
 
-      <hr></hr>
+     
+      <String/>
       <section className="space-y-3 text-center ">
       <Feature/>
    </section>
   
-      <hr></hr>
+   <String/>
       <section className="space-y-3 text-center ">
     
        <Quicker/>
        
       </section>
 
-      <hr></hr>
+      <String/>
       <section className="space-y-3 text-center ">
            <Format/>
       </section>
+      <String/>
 
-      <hr></hr>
+      <section className="space-y-3 text-center ">
+           <LatestArticle/>
+      </section>
+
+      <String/>
+
+      
       <section className="space-y-3 text-center mx-auto max-w-3xl px-3 py-10  ">
-        <H2>Project @ A Glance</H2>
+        <H1>Successful Projects I&apos;m Proud Of</H1>
+              <div>
+        <p className=" text-gray-700 dark:text-gray-300">No better way to get experience than real-life projects</p>
+        </div>
+      
        <Slide/>
        
       </section>

@@ -16,8 +16,10 @@ const Quicker = () => {
             <p className="mt-6 text-gray-700 dark:text-gray-300">Customer satisfaction comes first, and in order to do that I decided to pickup skills and principles to provide quality service</p>
           </div>
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+
             {/* Card 1 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col justify-center items-center shadow-lg inset-shadow-lg rounded-xl ">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center
+             shadow-lg inset-shadow-lg rounded-xl ">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -25,11 +27,13 @@ const Quicker = () => {
                 <IoLogoFlickr color='blue' size={40}/>
               </div>
               <div className="mt-6 pb-6 text-center  ">Continous Support
-                <p className="text-gray-700 dark:text-gray-300">Optimize web software for competitiveness, ensuring swift updates and regular feature releases through efficient DevOps practices.</p>
+                <p className="text-gray-700 dark:text-gray-900">Optimize web software for competitiveness, ensuring swift 
+                updates and regular feature releases through efficient DevOps practices.</p>
               </div>
             </div>
             {/* Card 2 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center shadow-lg 
+            inset-shadow-lg rounded-xl">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -37,11 +41,12 @@ const Quicker = () => {
                 <IoLogoCodepen color='blue' size={40}/>
               </div>
               <div className="mt-6 pb-6 text-center  ">Frontend design/dev
-                <p className="text-gray-700 dark:text-gray-300">Analyze user needs, design UIs, to build web apps that meet those needs effectively.</p>
+                <p className="text-gray-700 dark:text-gray-900">Analyze user needs, design UIs, to build web apps that meet 
+                those needs effectively.</p>
               </div>
             </div>
             {/* Card 3 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -49,7 +54,7 @@ const Quicker = () => {
                 <IoLogoBuffer color='blue' size={40}/>
               </div>
               <div className="mt-6 pb-6 text-center  ">Feedback Collaboration
-                <p className="text-gray-700 dark:text-gray-300">Incorporating user feedback into development processes for continuous improvement and enhanced user experience.</p>
+                <p className="text-gray-700 dark:text-gray-900">Incorporating user feedback into development processes for continuous improvement and enhanced user experience.</p>
               </div>
             </div>
             {/* Add more cards here */}
@@ -66,7 +71,7 @@ const Quicker = () => {
           </div>
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {/* Card 1 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col justify-center items-center  shadow-lg inset-shadow-lg rounded-xl">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center  shadow-lg inset-shadow-lg rounded-xl">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -74,11 +79,11 @@ const Quicker = () => {
                 <IoLogoDribbble color='blue' size={40}/>
               </div>
               <div className="mt-6 pb-6 text-center  ">System Integration
-                <p className="text-gray-700 dark:text-gray-300">Streamlining the interaction between different software systems to optimize efficiency, data flow, and functionality across the organization.</p>
+                <p className="text-gray-700 dark:text-gray-900">Streamlining the interaction between different software systems to optimize efficiency, data flow, and functionality across the organization.</p>
               </div>
             </div>
             {/* Card 2 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col justify-center items-center shadow-lg inset-shadow-lg  rounded-xl">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center shadow-lg inset-shadow-lg  rounded-xl">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -86,11 +91,11 @@ const Quicker = () => {
                 <IoLogoEuro color='blue' size={40}/>
               </div>
               <div className="mt-6 pb-6 text-center  ">Infrastructure Support
-                <p className="text-gray-700 dark:text-gray-300">Ensuring smooth operation and reliability of infrastructure through essential technical assistance and maintenance.</p>
+                <p className="text-gray-700 dark:text-gray-900">Ensuring smooth operation and reliability of infrastructure through essential technical assistance and maintenance.</p>
               </div>
             </div>
             {/* Card 3 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col  dark:bg-slate-200 justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -98,7 +103,7 @@ const Quicker = () => {
                 <IoLogoIonic color='blue' size={40}/>
               </div>
               <div className="mt-6 pb-6 text-center  ">Architecture Design
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-gray-700 dark:text-gray-900">
 Designing detailed software/system blueprints for scalability, performance, security, and business alignment.</p>
               </div>
             </div>

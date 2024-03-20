@@ -25,11 +25,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class">
-          
           <Navbar />
-          
           <Cursor/>
-          <main className="" >{children}</main>
+          <main>{children}</main>
           
           <Footer />
         </ThemeProvider>

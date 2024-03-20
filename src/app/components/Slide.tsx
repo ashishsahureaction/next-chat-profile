@@ -47,7 +47,7 @@ const Slide: React.FC = () => {
       spaceBetween={30}
       centeredSlides={true}
       autoplay={{
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -69,8 +69,9 @@ const Slide: React.FC = () => {
 const Header: React.FC<HeaderProps> = ({ image }) => {
   return (
     <header>
-      <div className="relative overflow-hidden rounded-lg shadow-lg">
-        <Image src={image.src} alt={image.alt} />
+      <div className="relative overflow-hidden rounded-lg shadow-lg mt-6">
+        <Image src={image.src} alt={image.alt} height={700} width={800} object-Fit="contain" />
+      
         <div className="absolute inset-0 flex items-center justify-center bg-fixed">
           <div className="text-center text-white">
             <h1 className="mb-6 text-5xl font-bold">{image.title}</h1>

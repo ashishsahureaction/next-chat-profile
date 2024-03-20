@@ -225,6 +225,7 @@ export default function Page() {
       src={tag}
       alt="whitewater river rafting group photo"
       className="rounded-md"
+      objectFit="contain"
     />
   </div>
   <div className="sticky top-0 flex flex-col items-center justify-center h-screen">
