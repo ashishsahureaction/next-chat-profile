@@ -55,9 +55,12 @@ const Cencora: React.FC = () => {
           </div>
 
           <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
-            <Image className="w-[28rem] h-[28rem] object-contain xl:w-[34rem] xl:h-[34rem] rounded-full" 
-            src={cen} width={755} height={755} alt="" />
-          </div>
+  <div className="flex items-center justify-center w-[28rem] h-[28rem] xl:w-[34rem] xl:h-[34rem] rounded-full overflow-hidden">
+    <Image className="object-contain w-full h-full transition-all-ease" src={cen} width={755} height={755} alt="" />
+  </div>
+</div>
+        
+        
         </div>
 
         <Link href="https://www.generali.com/" target="_blank" rel="noreferrer" className="relative flex items-center justify-center w-32 h-[46px] mt-4 rounded px-10 py-3 border border-gray-800 text-sm font-medium hover:scale-95 bg-orange-600 shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">

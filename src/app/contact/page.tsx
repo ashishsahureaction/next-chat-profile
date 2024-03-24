@@ -8,6 +8,7 @@ import Cube from "../components/Cube";
 
 
 
+
 export const metadata: Metadata = {
   title: "Contact Me",
   description: "Feel free to contact me",
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 export default function Page() {
 
   return (
+  
     <section className="space-y-6 shadow-lg inset-shadow-lg mx-auto max-w-3xl px-3 py-10 ">
 
       <H1 className="group hover:text-gray-600 transition-colors duration-300"> 

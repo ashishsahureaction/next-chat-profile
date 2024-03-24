@@ -43,7 +43,7 @@ const ScrollSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="scroll-section-outer">
+    <section className="scroll-section-outer ">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           <Feature />

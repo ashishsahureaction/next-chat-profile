@@ -15,6 +15,7 @@ import LatestArticle from "./components/LatestArticle";
 import ScrollSection from "./components/ScrollSection";
 import Welcome from "./Welcome";
 import BackToTopButton from "./components/BackToTopButton";
+import Expe from "./components/Expe";
 
 
 
@@ -69,9 +70,14 @@ export default function Home() {
     </div>
      
       <String/>
-      <section className="space-y-3 text-center ">
+      <section className="space-y-3 text-center">
        <ScrollSection/>
    </section>
+
+   <String/>
+      <section className="space-y-3 text-center ">
+    <Expe/>      
+      </section>
   
    <String/>
       <section className="space-y-3 text-center ">

@@ -31,6 +31,7 @@ import tailwind from "@/assets/tailwind.png";
 import typescript from "@/assets/typescript.png";
 import upstash from "@/assets/upstash.png";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 interface Tool {

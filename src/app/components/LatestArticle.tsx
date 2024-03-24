@@ -5,6 +5,7 @@ import three from "@/assets/three.jpg";
 import one from "@/assets/one.jpg";
 import { SiYourtraveldottv, SiSmartthings, SiGoogleearthengine } from "react-icons/si";
 
+
 const LatestArticle: FC = () => {
   return (
     <div className="container my-16 mx-auto md:px-6 text-justify ">

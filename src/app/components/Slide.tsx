@@ -9,6 +9,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 
 
+
 import one from "@/assets/one.jpg";
 import two from '@/assets/two.jpg';
 import three from '@/assets/three.jpg';
@@ -71,6 +72,8 @@ const Slide: React.FC = () => {
 
 const Header: React.FC<HeaderProps> = ({ image }) => {
   return (
+    <>
+    
     <header>
       <div className="relative overflow-hidden rounded-lg shadow-lg mt-6">
         <Image src={image.src} alt={image.alt} height={700} width={800} objectFit="cover" />
@@ -90,7 +93,11 @@ const Header: React.FC<HeaderProps> = ({ image }) => {
           </div>
         </div>
       </div>
+      
     </header>
+ 
+
+    </>
   );
 };
 

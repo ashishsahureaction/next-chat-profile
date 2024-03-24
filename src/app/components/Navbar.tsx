@@ -7,6 +7,8 @@ import ToggleButton from "./ToggleButton";
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 
+
+
 interface NavLinkProps {
   href: string;
   text: string;
@@ -68,7 +70,9 @@ const Navbar: React.FC = () => {
           </div>
           <div className="hidden md:block">
             <ToggleButton />
+         
           </div>
+       
         </header>
       </div>
     </nav>

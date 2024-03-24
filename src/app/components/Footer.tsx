@@ -91,30 +91,33 @@ export default function Footer() {
 
           <div>
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">Contact</h6>
-            <p className="mb-4 flex items-center justify-center md:justify-start">
+            <a className="flex items-center justify-center md:justify-start hover:underline" href="https://www.google.com/maps/place/92+King+St+E,+Toronto,+ON+M5C+2V8/@43.6500794,-79.3775401,17z/data=!3m1!4b1!4m6!3m5!1s0x89d4cb3189975b7b:0x11009809827c0681!8m2!3d43.6500755!4d-79.3749652!16s%2Fg%2F11c5kp4drm?entry=ttu">
+  <span className="me-3">
+    <FaLocationDot size={16} color="blue" />
+  </span>
+  King Street, Toronto, Canada
+</a>
+
+  <a href="mailto:ashishsahu15k@gmail.com" className="flex items-center justify-center md:justify-start mt-4 hover:underline">
+  <span className="me-3">
+    <MdAttachEmail size={16} />
+  </span>
+  ashishsahu15k@gmail.com
+</a>
+            <a href="tel:+14379732998" className="mb-4 flex items-center justify-center md:justify-start mt-4 hover:underline">
               <span className="me-3">
-                <FaLocationDot size={16} color="blue" />
-              </span>
-              King Street, Toronto, Canada
-            </p>
-            <p className="mb-4 flex items-center justify-center md:justify-start">
-              <span className="me-3">
-                <MdAttachEmail size={16} />
-              </span>
-              ashishsahu15k@gmail.com
-            </p>
-            <p className="mb-4 flex items-center justify-center md:justify-start">
-              <span className="me-3">
+            
                 <MdAddIcCall size={16}  />
               </span>
               + 01 437 973 2998
-            </p>
-            <p className="flex items-center justify-center md:justify-start">
-              <span className="me-3">
-                <FaWhatsapp size={16} color="#25D366" />
-              </span>
-              + 91 982 082 4498
-            </p>
+            </a>
+
+            <a href="https://wa.me/+919820824498" className="flex items-center justify-center md:justify-start mt-4 hover:underline">
+  <span className="me-3">
+      <FaWhatsapp size={16} color="#25D366" />
+  </span>
+  +91 982 082 4498
+</a>
           </div>
         </div>
       </div>

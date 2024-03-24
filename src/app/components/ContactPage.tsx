@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { useEffect, useRef } from "react";
 import emailjs from 'emailjs-com';
-import Link from "next/link";
 import { FaArrowUp } from "react-icons/fa";
 
 
@@ -53,19 +52,20 @@ const ContactPage: React.FC = () => {
   return (
     <div className="max-w-md mx-auto">
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label htmlFor="name" className="span">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full border rounded-md px-3 py-2"
-            required
-            ref={inputRef}
-          />
-        </div>
+      <div>
+  <label htmlFor="name" className="span">Name</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    value={formData.name}
+    onChange={handleChange}
+    className="w-full border rounded-md px-3 py-2"
+    required
+    ref={inputRef}
+    autoFocus
+  />
+</div>
         <div>
           <label htmlFor="email" className="block">Email</label>
           <input
@@ -90,6 +90,7 @@ const ContactPage: React.FC = () => {
             className="w-full border rounded-md px-3 py-2"
             required
             ref={inputRef}
+           
        
           />
         </div>
