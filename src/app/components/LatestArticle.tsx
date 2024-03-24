@@ -1,20 +1,20 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import seven from "@/assets/seven.jpg";
+import sevenone from "@/assets/sevenone.jpg";
 import three from "@/assets/three.jpg";
 import one from "@/assets/one.jpg";
 import { SiYourtraveldottv, SiSmartthings, SiGoogleearthengine } from "react-icons/si";
 
 const LatestArticle: FC = () => {
   return (
-    <div className="container my-16 mx-auto md:px-6 text-justify">
+    <div className="container my-16 mx-auto md:px-6 text-justify ">
       <section className="mb-16">
         <h2 className="mb-16 text-center text-2xl font-bold">Some Projects</h2>
 
         <div className="mb-8 flex flex-wrap">
           <div className="mb-6 w-full lg:mb-0 lg:w-4/12 lg:pr-6 ml-16">
-            <div className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg">
-              <Image src={seven} className="w-full" alt="Louvre" height={700} width={800} objectFit="cover" />
+            <div className="ripple relative overflow-hidden rounded-lg  hover:scale-105 bg-cover bg-[50%] bg-no-repeat shadow-lg">
+              <Image src={sevenone} className="w-full" alt="Louvre" height={700} width={800} objectFit="cover" />
               <a href="#!">
                 <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
               </a>
@@ -41,7 +41,7 @@ const LatestArticle: FC = () => {
 
         <div className="mb-16 flex flex-wrap lg:flex-row-reverse">
         <div className="mb-6 w-full lg:mb-0 lg:w-4/12 lg:pr-6 ml-16">
-            <div className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg">
+            <div className="ripple relative overflow-hidden rounded-lg bg-cover  hover:scale-105 bg-[50%] bg-no-repeat shadow-lg">
               <Image src={one} className="w-full" alt="Louvre" height={700} width={800} objectFit="contain" />
               <a href="#!">
                 <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
@@ -50,7 +50,7 @@ const LatestArticle: FC = () => {
           </div>
 
           <div className="w-full lg:w-6/12 lg:pr-6">
-            <h3 className="mb-4 text-2xl font-bold">Mern-Blog Exhibition</h3>
+            <h3 className="mb-4 text-2xl font-bold">Mern-Blog Exhibition !</h3>
             <div className="mb-4 flex items-center text-sm font-medium text-primary dark:text-primary-400">
               <SiSmartthings size={16} color='green' />
               Sharing
@@ -69,7 +69,7 @@ const LatestArticle: FC = () => {
 
         <div className="flex flex-wrap">
         <div className="mb-6 w-full lg:mb-0 lg:w-4/12 lg:pr-6 ml-16">
-            <div className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20" data-te-ripple-init data-te-ripple-color="light">
+            <div className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%]  hover:scale-105 bg-no-repeat shadow-lg dark:shadow-black/20" data-te-ripple-init data-te-ripple-color="light">
               <Image src={three} className="w-full" alt="Louvre" height={700} width={800} objectFit="contain" />
               <a href="#!">
                 <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>

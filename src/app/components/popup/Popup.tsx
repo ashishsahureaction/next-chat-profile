@@ -13,6 +13,8 @@ const Popup = (props: Props) => {
     return (
       <div>
         <RatingCard handleRating={handleRating} />
+       
+        
       </div>
     );};
 export default Popup;

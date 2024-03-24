@@ -3,12 +3,15 @@ import tag from "@/assets/tag.jpg";
 import tag1 from "@/assets/tag1.jpg";
 import tag2 from "@/assets/tag2.jpg";
 import tag3 from "@/assets/tag3.jpg";
-
+import tag4 from "@/assets/tag4.jpg";
+import eighttwo from "@/assets/eighttwo.jpg";
+import tag6 from "@/assets/tag6.jpg";
 import { H1 } from "../components/ui/H1";
 import { H2 } from "../components/ui/H2";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import BackToTopButton from "../components/BackToTopButton";
 
 
 
@@ -253,6 +256,42 @@ export default function Page() {
 
         </div> 
 
+        <section className="space-y-3 shadow-lg inset-shadow-lg ">
+  <H2 className="group hover:text-gray-600 transition-colors duration-300">
+    <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Gallery
+  </H2>
+          <div className="flex flex-wrap ">
+  
+          
+          <div className="w-1/4 p-1 shadow-lg inset-shadow-lg" >
+            <Image src={tag} alt="river rafting group photo" className="rounded-md  hover:scale-105" width={300} height={300} />
+          </div>
+          <div className="w-1/4 p-1">
+            <Image src={tag1} alt="river rafting group photo" className="rounded-md  hover:scale-105" width={300} height={300} />
+          </div>
+          <div className="w-1/4 p-1">
+            <Image src={tag2} alt="river rafting group photo" className="rounded-md hover:scale-105" width={300} height={300} />
+          </div>
+          <div className="w-1/4 p-1">
+            <Image src={tag3} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+          </div>
+          <div className="w-1/4 p-1">
+            <Image src={tag4} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+          </div>
+          <div className="w-1/4 p-1">
+            <Image src={tag6} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+          </div>
+          <div className="w-1/4 p-1">
+            <Image src={tag6} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+          </div>
+          <div className="w-1/4 p-1">
+            <Image src={eighttwo} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+          </div>
+         
+          
+        </div>      
+        
+
       </section>
 
 
@@ -266,11 +305,12 @@ export default function Page() {
         to make a positive impact. Whether it&apos;s driving digital transformation initiatives, spearheading new projects, or collaborating 
         with like-minded professionals, I&apos;m eager to explore opportunities that align with my passion for excellence and innovation.
         </p>
+        <BackToTopButton/>
 
         
       </section>
 
-
+      </section>
       
 
     </section>

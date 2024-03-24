@@ -45,9 +45,10 @@ const ToggleButton: React.FC = () => {
                 </Link>
               </li>
               <li className="menu_item bg-white z-20 absolute right-0 top-0 border-b-2 border-l-2 border-zinc-400 group
-               hover:bg-orange-600 duration-500 font-bebas text-[6vw] sm:text-[3vw] h-3/4 w-3/4 dark:text-zinc-600  dark:hover:text-black">
-                <Link href="/ashish_resume.pdf" passHref legacyBehavior>
-                  <a onClick={handleLinkClick} className="h-full leading-none group-hover:text-white duration-300 flex justify-start pl-5 pb-5 items-end">
+               hover:bg-orange-600 duration-500 font-bebas text-[6vw] sm:text-[3vw] h-3/4 w-3/4 dark:text-zinc-600 
+                dark:hover:text-black" >
+                <Link href="/ashish_resume.pdf"  passHref legacyBehavior>
+                  <a onClick={handleLinkClick} target='blank' className="h-full leading-none group-hover:text-white duration-300 flex justify-start pl-5 pb-5 items-end">
                     Resume
                   </a>
                 </Link>
@@ -60,6 +61,7 @@ const ToggleButton: React.FC = () => {
                   </a>
                 </Link>
               </li>
+              
             </ul>
           </div>
         </div>

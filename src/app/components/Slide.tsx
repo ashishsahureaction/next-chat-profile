@@ -10,14 +10,14 @@ import Image from 'next/image';
 
 
 import one from "@/assets/one.jpg";
-
 import two from '@/assets/two.jpg';
 import three from '@/assets/three.jpg';
 import four from '@/assets/four.jpg';
-import five from '@/assets/five.jpg';
-import six from '@/assets/six.jpg';
-import seven from '@/assets/seven.jpg';
+import eightfour from '@/assets/eightfour.jpg';
+import eightthree from '@/assets/eightthree.jpg';
+import sevenone from '@/assets/sevenone.jpg';
 import eight from '@/assets/eight.jpg';
+import eighttwo from '@/assets/eighttwo.jpg';
 
 interface SlideProps {
   src: any;
@@ -36,10 +36,12 @@ const Slide: React.FC = () => {
     { src: two, alt: 'blog', title: 'Blog Post Writing Services', tech: 'MangoDB, Redux-Saga, SCSS' },
     { src: three, alt: 'weather', title: 'Weather Update', tech: 'API, Tailwind, MUI' },
     { src: four, alt: 'book', title: 'Book Cover Design & Printing', tech: 'OpenAI, Upstarx, Hook' },
-    { src: five, alt: 'profile', title: 'Profile Picture Design', tech: 'AstraData, NoSQL, FireBase' },
-    { src: six, alt: 'dairy', title: 'Dairy Food Label Design', tech: 'ChatGPT, React, JavaScript' },
-    { src: seven, alt: 'movie', title: 'Movie Surfing', tech: 'TypeScript, NodeJs, ExpressJs' },
+    { src: eightfour, alt: 'profile', title: 'Profile Picture Design', tech: 'AstraData, NoSQL, FireBase' },
+    { src: eightthree, alt: 'dairy', title: 'Dairy Food Label Design', tech: 'ChatGPT, React, JavaScript' },
+    { src: sevenone, alt: 'movie', title: 'Movie Surfing', tech: 'TypeScript, NodeJs, ExpressJs' },
+    { src: eighttwo, alt: 'food', title: 'Food Delivery at Your Place', tech: 'Angular, Bootstarp, FireBase' },
     { src: eight, alt: 'food', title: 'Food Delivery at Your Place', tech: 'Angular, Bootstarp, FireBase' },
+
   ];
 
   return (
@@ -66,11 +68,12 @@ const Slide: React.FC = () => {
   );
 };
 
+
 const Header: React.FC<HeaderProps> = ({ image }) => {
   return (
     <header>
       <div className="relative overflow-hidden rounded-lg shadow-lg mt-6">
-        <Image src={image.src} alt={image.alt} height={700} width={800} object-Fit="contain" />
+        <Image src={image.src} alt={image.alt} height={700} width={800} objectFit="cover" />
       
         <div className="absolute inset-0 flex items-center justify-center bg-fixed">
           <div className="text-center text-white">

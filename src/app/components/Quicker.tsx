@@ -1,8 +1,28 @@
-import React from 'react';
+'use client'
+import React, { useEffect } from 'react';
+import { gsap } from 'gsap';
 import { IoLogoBuffer, IoLogoFlickr, IoLogoCodepen , IoLogoDribbble , IoLogoEuro, IoLogoIonic  } from "react-icons/io";
 
 
-const Quicker = () => {
+const Quicker: React.FC = () => {
+  useEffect(() => {
+  
+    const tl = gsap.timeline({ defaults: { duration: 1 } });
+
+    
+    const cards = document.querySelectorAll('.relative.group');
+
+   
+    tl.set(cards, { opacity: 0, y: 50 });
+
+    
+    tl.to(cards, { opacity: 1, y: 0, stagger: 0.2, ease: 'power3.out' });
+
+    
+  }, []); 
+
+
+
   return (<> 
     <section>
 
@@ -18,8 +38,8 @@ const Quicker = () => {
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
 
             {/* Card 1 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center
-             shadow-lg inset-shadow-lg rounded-xl ">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center 
+            items-center  shadow-lg inset-shadow-lg rounded-xl ">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow

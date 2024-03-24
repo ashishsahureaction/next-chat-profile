@@ -96,13 +96,14 @@ export default function Page() {
         <hr className="border-muted" />
       </section>
       <section className="space-y-3 ">
-        <H2 className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Content</H2><ul className="list-inside list-disc space-y-1">
+        <H2 className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 
+        ml-1 ">#</span>Content</H2><ul className="list-inside list-disc space-y-1">
           <li>
             <a
               href="https://github.com/ashishsahureaction"target="blank" rel="me noreferrer noopener"
               className="text-primary hover:underline"
             >
-              Full-stack web development playlist
+              Full-stack web development list
             </a>{" "}
             - Learn full-stack web development from zero by building
             progressively more advanced projects. We focus on{" "}
@@ -114,7 +115,7 @@ export default function Page() {
               href="https://github.com/ashishsahureaction"target="blank" rel="me noreferrer noopener"
               className="text-primary hover:underline"
             >
-              Web dev shorts playlist
+              Web dev shorts list
             </a>{" "}
             - All my web development related Github Shorts Projects in one list.
           </li>
@@ -158,26 +159,25 @@ export default function Page() {
         In my professional journey, I&apos;ve had the opportunity to collaborate with several distinguished companies, 
         including{" "}
           <a
-            href="https://www.innomar-strategies.com/"target="blank" rel="me noreferrer noopener"
+            href="/card/cencora" rel="me noreferrer noopener"
             className="text-primary hover:underline"
           >
             Cencora
           </a>
           ,{" "}
-          <a href="https://www.generali.co.uk/" 
-          target="blank" rel="me noreferrer noopener"className="text-primary hover:underline">
+          <a href="/card/future" rel="me noreferrer noopener"className="text-primary hover:underline">
             Generali Health
           </a>
           ,{" "}
           <a
-            href="https://skyylives.com/banking-finance-solutions/" target="blank" rel="me noreferrer noopener"
+            href="/card/skylives" rel="me noreferrer noopener"
             className="text-primary hover:underline"
           >
             Skyylives Infotech
           </a>
           ,{" "}
           <a
-            href="https://www.hdfcbank.com/" target="blank" rel="me noreferrer noopener"
+            href="/card/skylives" rel="me noreferrer noopener"
             className="text-primary hover:underline"
           >
             HDFC Bank

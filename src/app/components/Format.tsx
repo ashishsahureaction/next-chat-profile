@@ -1,5 +1,8 @@
-import React from 'react';
+'use client'
 import Image from "next/image";
+import React, { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Import all images
 import Angular from "@/assets/Angular.png";
@@ -28,6 +31,8 @@ import tailwind from "@/assets/tailwind.png";
 import typescript from "@/assets/typescript.png";
 import upstash from "@/assets/upstash.png";
 
+gsap.registerPlugin(ScrollTrigger);
+
 interface Tool {
   src: any;
   alt: string;
@@ -49,7 +54,6 @@ const tools: Tool[] = [
   { src: node, alt: "Node.js" },
   { src: firebase, alt: "Firebase" },
   { src: mangodb, alt: "MongoDB" },
-  { src: github, alt: "GitHub" },
   { src: tailwind, alt: "Tailwind CSS" },
   { src: typescript, alt: "TypeScript" },
 
@@ -74,6 +78,45 @@ const pools: Pool[] = [
 
 
 const Format: React.FC = () => {
+  const toolsContainerRef = useRef<HTMLDivElement>(null);
+  const poolsContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const toolsElements = toolsContainerRef.current?.querySelectorAll('.tool');
+    const poolsElements = poolsContainerRef.current?.querySelectorAll('.pool');
+
+    if (toolsElements && poolsElements) {
+      const timeline = gsap.timeline();
+
+      timeline.from(toolsElements, {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        stagger: 0.2,
+      });
+      timeline.from(poolsElements, {
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        stagger: 0.2,
+      });
+
+      ScrollTrigger.create({
+        onUpdate: (self) => {
+          if (self.direction === 1) {
+            timeline.play();
+          } else {
+            timeline.reverse();
+          }
+        },
+      });
+    }
+  }, []);
+
+
+
   return (
     <section>
       <div className="py-16">

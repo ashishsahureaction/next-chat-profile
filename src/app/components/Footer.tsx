@@ -23,23 +23,23 @@ export default function Footer() {
           <span>Get connected with me on social networks:</span>
         </div>
         <div className="flex justify-center">
-          <a href="#!" className="me-6">
+          <a href="https://www.facebook.com/" className="me-6 hover:scale-110">
             <FaFacebook size={16} color="#1877F2" />
           </a>
-          <a href="#!" className="me-6">
+          <a href="https://www.youtube.com/" className="me-6 hover:scale-110">
             <FaYoutube size={16} color="#FF0000" />
           </a>
-          <a href="#!" className="me-6">
+          <a href="www.linkedin.com/in/ashish-sahu-3c" className="me-6 hover:scale-110">
             <FaLinkedinIn size={16} color="#0077B5" />
           </a>
-          <a href="#!" className="me-6">
+          <a href="https://www.instagram.com/" className="me-6 hover:scale-110">
             <FaInstagramSquare size={16} color="purple" />
           </a>
-          <a href="#!" className="me-6">
-            <FaGithub size={16} color="black" />
+          <a href="https://github.com/ashishsahureaction" className="me-6 hover:scale-110">
+            <FaGithub size={16}  />
           </a>
-          <a href="#!">
-            <FaXTwitter size={16} color="black" />
+          <a href="https://twitter.com/">
+            <FaXTwitter size={16}  />
           </a>
         </div>
       </div>
@@ -58,34 +58,34 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">Work</h6>
+            <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start ">Work</h6>
             <p className="mb-4">
-              <a href="#!">Cencora</a>
+              <a  className="hover:underline" href="/card/cencora">Cencora</a>
             </p>
             <p className="mb-4">
-              <a href="#!">Future Generali</a>
+              <a  className="hover:underline" href="/card/future">Future Generali</a>
             </p>
             <p className="mb-4">
-              <a href="#!">Skyylives Info</a>
+              <a  className="hover:underline"  href="/card/skylives">Skyylives Info</a>
             </p>
-            <p>
-              <a href="#!">Hdfc Bank</a>
+            <p className="mb-4">
+              <a   className="hover:underline"  href="/card/hdfc">Hdfc Bank</a>
             </p>
           </div>
 
           <div>
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">Useful links</h6>
-            <p className="mb-4">
-              <a href="#!">Projects</a>
+            <p className="mb-4 hover:underline">
+              <a href="/projects">Projects</a>
             </p>
-            <p className="mb-4">
-              <a href="#!">Download</a>
+            <p className="mb-4 hover:underline">
+              <a href="/ashish_resume.pdf" target="blank" >Download</a>
             </p>
-            <p className="mb-4">
-              <a href="#!">NextJs</a>
+            <p className="mb-4 hover:underline">
+              <a href="https://nextjs.org/">NextJs</a>
             </p>
-            <p>
-              <a href="#!">Chat-Bot</a>
+            <p className="mb-4 hover:underline">
+              <a href="/">Chat-Bot</a>
             </p>
           </div>
 
@@ -99,13 +99,13 @@ export default function Footer() {
             </p>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <span className="me-3">
-                <MdAttachEmail size={16} color="indigo" />
+                <MdAttachEmail size={16} />
               </span>
               ashishsahu15k@gmail.com
             </p>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <span className="me-3">
-                <MdAddIcCall size={16} color="blue" />
+                <MdAddIcCall size={16}  />
               </span>
               + 01 437 973 2998
             </p>
@@ -126,7 +126,7 @@ export default function Footer() {
       before:bg-transparent before:blur-none before:border-8 before:opacity-50 before:rounded-full before:-left-4 before:-top-12 
       relative z-10 group-hover:before:top-28 group-hover:before:left-44 group-hover:before:scale-125 group-hover:before:blur">
 
-<div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8  ">
+<div className=" px-4 py-8 sm:px-6 lg:px-8  ">
     <div className="sm:flex sm:items-center sm:justify-between     ">
       <div className="flex justify-center sm:justify-start  ">
     
@@ -191,17 +191,12 @@ export default function Footer() {
         Privacy &copy; Ashish Sahu {new Date().getFullYear()} 
       </p>
 </div>
-
-
 </Link>
-      
-    </div>
   </div>
-
-</nav>
-     
+  </div>
+  </nav>   
 </footer>
-      </div>
+  </div>
 </footer>
 </>
     

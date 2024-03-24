@@ -1,7 +1,5 @@
 'use client'
-
-
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import gsap from 'gsap';
 
 const Cursor: React.FC = () => {
@@ -35,16 +33,18 @@ const Cursor: React.FC = () => {
       ySet(pos.y);
     };
 
-    gsap.ticker.add(animationTick);
+    const ticker = gsap.ticker.add(animationTick);
 
     return () => {
       window.removeEventListener("mousemove", mouseMoveHandler);
-      gsap.ticker.remove(animationTick);
+      if (ticker) {
+        gsap.ticker.remove(ticker);
+      }
     };
   }, []);
 
   return (
-    <div className="absolute w-7 h-7 bg-transparent border-2 border-orange-600 rounded-full pointer-events-none cursor"></div>
+    <div className="fixed w-7 h-7 bg-transparent border-2 border-orange-600 rounded-full pointer-events-none cursor"></div>
   );
 };
 
