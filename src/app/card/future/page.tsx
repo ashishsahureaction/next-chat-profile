@@ -56,7 +56,7 @@ const Future: React.FC = () => {
 
           <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
             <Image className="w-[28rem] h-[28rem] object-contain xl:w-[34rem] xl:h-[34rem] rounded-full" 
-            src={fut} width={755} height={755} alt="" />
+            src={fut} width={755} height={755} alt="" loading="lazy"/>
           </div>
         </div>
 

@@ -49,7 +49,7 @@ export default function Footer() {
           <div className="">
             <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
               <span className="me-3">
-                <Image src={logo} alt="TW Elements" height={120} width={120} />
+                <Image src={logo} alt="TW Elements" height={120} width={120} loading="lazy"/>
               </span>
             </h6> 
             <p className="text-justify">
@@ -147,6 +147,7 @@ export default function Footer() {
                     width={15}
                     height={15}
                     alt="open ai logo"
+                    loading="lazy"
                   />{" "}
                   OpenAi
                 </a>
@@ -163,6 +164,7 @@ export default function Footer() {
                     width={20}
                     height={20}
                     alt="nextjs logo"
+                    loading="lazy"
                   />{" "}
                   Next.js
                 </a>
@@ -179,6 +181,7 @@ export default function Footer() {
                     width={20}
                     height={20}
                     alt="tailwind logo"
+                    loading="lazy"
                   />{" "}
                   Tailwind 
                 </a>

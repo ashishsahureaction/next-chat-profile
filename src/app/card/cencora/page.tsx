@@ -56,7 +56,7 @@ const Cencora: React.FC = () => {
 
           <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
   <div className="flex items-center justify-center w-[28rem] h-[28rem] xl:w-[34rem] xl:h-[34rem] rounded-full overflow-hidden">
-    <Image className="object-contain w-full h-full transition-all-ease" src={cen} width={755} height={755} alt="" />
+    <Image className="object-contain w-full h-full transition-all-ease" src={cen} width={755} height={755} alt="" loading="lazy" />
   </div>
 </div>
         

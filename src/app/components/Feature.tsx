@@ -44,6 +44,7 @@ const Feature : React.FC = () => {
            width={400}
            height={600}
            className="w-full rounded-lg shadow-lg dark:shadow-black/20"
+           loading="lazy"
          />
        </div>
      </div>

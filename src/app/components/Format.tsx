@@ -130,7 +130,7 @@ const Format: React.FC = () => {
             {/* Render each tool */}
             {tools.map((tool, index) => (
               <div key={index} className="relative group p-8 flex flex-col justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
-                <Image src={tool.src} alt={tool.alt} height={60} width={60} />
+                <Image src={tool.src} alt={tool.alt} height={60} width={60} loading="lazy"/>
                 <span>{tool.alt}</span>
               </div>
             ))}
@@ -147,7 +147,7 @@ const Format: React.FC = () => {
             {/* Render each tool */}
             {pools.map((pool, index) => (
               <div key={index} className="relative group p-8 flex flex-col justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
-                <Image src={pool.src} alt={pool.alt} height={60} width={60} />
+                <Image src={pool.src} alt={pool.alt} height={60} width={60} loading="lazy"/>
                 <span>{pool.alt}</span>
               </div>
             ))}

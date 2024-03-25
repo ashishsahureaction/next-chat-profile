@@ -221,6 +221,7 @@ export default function Page() {
           src={bjj}
           alt="whitewater river rafting group photo"
           className="rounded-md shadow-lg inset-shadow-lg"
+          loading="lazy"
         />
 
       <div className="relative shadow-lg inset-shadow-lg">
@@ -230,6 +231,7 @@ export default function Page() {
       alt="whitewater river rafting group photo"
       className="rounded-md"
       objectFit="contain"
+      loading="lazy"
     />
   </div>
   <div className="sticky top-0 flex flex-col items-center justify-center h-screen">
@@ -237,6 +239,7 @@ export default function Page() {
       src={tag1}
       alt="whitewater river rafting group photo"
       className="rounded-md"
+      loading="lazy"
     />
   </div>
   <div className="sticky top-0 flex flex-col items-center justify-center h-screen">
@@ -244,6 +247,7 @@ export default function Page() {
       src={tag2}
       alt="whitewater river rafting group photo"
       className="rounded-md"
+      loading="lazy"
     />
   </div>
   <div className="sticky flex flex-col items-center justify-center h-screen">
@@ -251,7 +255,7 @@ export default function Page() {
     <Image
       src={tag3} 
       alt="whitewater river rafting group photo"
-      className="rounded-md"
+      className="rounded-md" loading="lazy"
     />
   </div>
 
@@ -265,28 +269,28 @@ export default function Page() {
   
           
           <div className="w-1/4 p-1 shadow-lg inset-shadow-lg" >
-            <Image src={tag} alt="river rafting group photo" className="rounded-md  hover:scale-105" width={300} height={300} />
+            <Image src={tag} alt="river rafting group photo" className="rounded-md  hover:scale-105" width={300} height={300} loading="lazy"/>
           </div>
           <div className="w-1/4 p-1">
-            <Image src={tag1} alt="river rafting group photo" className="rounded-md  hover:scale-105" width={300} height={300} />
+            <Image src={tag1} alt="river rafting group photo" className="rounded-md  hover:scale-105" width={300} height={300} loading="lazy" />
           </div>
           <div className="w-1/4 p-1">
-            <Image src={tag2} alt="river rafting group photo" className="rounded-md hover:scale-105" width={300} height={300} />
+            <Image src={tag2} alt="river rafting group photo" className="rounded-md hover:scale-105" width={300} height={300} loading="lazy" />
           </div>
           <div className="w-1/4 p-1">
-            <Image src={tag3} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+            <Image src={tag3} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy" />
           </div>
           <div className="w-1/4 p-1">
-            <Image src={tag4} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+            <Image src={tag4} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy" />
           </div>
           <div className="w-1/4 p-1">
-            <Image src={tag6} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+            <Image src={tag6} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy" />
           </div>
           <div className="w-1/4 p-1">
-            <Image src={tag6} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+            <Image src={tag6} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy" />
           </div>
           <div className="w-1/4 p-1">
-            <Image src={eighttwo} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} />
+            <Image src={eighttwo} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy"/>
           </div>
          
           
@@ -307,19 +311,9 @@ export default function Page() {
         with like-minded professionals, I&apos;m eager to explore opportunities that align with my passion for excellence and innovation.
         </p>
         <BackToTopButton/>
-
         
       </section>
-
-
-
-
-
-
-
       </section>
-      
-
     </section>
     
   );

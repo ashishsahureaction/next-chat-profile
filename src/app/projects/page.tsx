@@ -1,7 +1,6 @@
 import { H1 } from "../components/ui/H1";
 import { H2 } from "../components/ui/H2";
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { GiCow } from "react-icons/gi";

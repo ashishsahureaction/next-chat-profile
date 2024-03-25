@@ -24,7 +24,7 @@ const Page = () => {
                 alt="blog app"
                 src={blog}
                 className="object-center transform scale-100 hover:scale-105 duration-75 absolute inset-0 h-full w-full object-cover" 
-                width={500} height={500}
+                width={500} height={500} loading="lazy"
               /> 
             </div>
 
