@@ -16,6 +16,7 @@ import ScrollSection from "./components/ScrollSection";
 import Welcome from "./Welcome";
 import BackToTopButton from "./components/BackToTopButton";
 import Expe from "./components/Expe";
+// import { TbAlphabetCyrillic } from "react-icons/tb";
 
 
 
@@ -29,7 +30,21 @@ export default function Home() {
   const currentTime = new Date();
   return (
     <>
-    <div className="flex flex-col items-center justify-start sm:my-8 sm:py-1  mx-auto max-w-3xl px-3 py-10 " >
+    <div className="flex flex-col items-center justify-start sm:my-8 sm:py-1 mx-auto max-w-3xl px-3 py-10 " >
+
+    <div className="flex items-end justify-end fixed top-14 left-0 mb-16 mr-4 z-10">
+        <div>
+            <Welcome/>
+          
+        </div>
+      </div>
+      {/* <div className="flex items-end justify-end fixed bottom-0 left-0 mb-4 mr-4 z-10">
+        <div>
+          <a title="CheckIn" href="#" target="_blank" className="block bg-indigo-950 w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+          < TbAlphabetCyrillic size={60} color="orange"/>
+          </a>
+        </div>
+      </div> */}
       
     <section className="space-y-16 bg-[url('/background.png')] bg-cover bg-center bg-no-repeat px-1 py-8 " >
       

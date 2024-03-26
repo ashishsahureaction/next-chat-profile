@@ -8,7 +8,6 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 
 
-
 interface NavLinkProps {
   href: string;
   text: string;
@@ -53,7 +52,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="navbar sticky top-0 bg-transparent backdrop-blur-10 z-50">
+    <nav className="navbar sticky top-0 light: bg-transparent light: bg-gray-100 dark:bg-transparent backdrop-blur-10 z-50">
       <div className="container mx-auto px-4">
         <header className="sticky top-0 bg-transparent backdrop-blur-10">
           <div className="mx-auto flex max-w-3xl flex-wrap justify-between gap-3 px-3 py-4 blur-content">
@@ -80,3 +79,5 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
+

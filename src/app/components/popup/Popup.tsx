@@ -11,7 +11,7 @@ const Popup = (props: Props) => {
 
 
     return (
-      <div>
+      <div className='overlay'>
         <RatingCard handleRating={handleRating} />
        
         

@@ -1,11 +1,10 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { LuAlignJustify } from 'react-icons/lu';
-import { RxCross1 } from 'react-icons/rx';
+import { BurgerBoughie } from "react-burger-icons";
 
 const ToggleButton: React.FC = () => {
-  const [isToggled, setIsToggled] = useState(false);
+  const [isToggled, setIsToggled ] = useState(false);
 
   const handleToggle = () => {
     const liElements = document.querySelectorAll('.menu_item');
@@ -19,15 +18,18 @@ const ToggleButton: React.FC = () => {
 
   return (
     <div className="rounded-3xl overflow-y-scroll no-scrollbar">
-      <button
-        className={`fixed top-4 left-5 z-50 px-5 py-2 hover:text-orange-600 ${
-          isToggled ? 'dark' : 'light'
-        }`}
-        onClick={handleToggle}
-      >
-        {isToggled ? <RxCross1 size={25} /> : <LuAlignJustify size={25} />}
-      </button>
-
+  
+  <button className="fixed top-3 left-5 z-50 px-5 py-2 hover: text-orange-600"
+        onClick={() => setIsToggled(!isToggled)}
+        style={{
+          width: "40px",
+          height: "40px",
+          display: "grid",
+          placeItems: "center",
+          
+        }}>
+  <BurgerBoughie isClosed={isToggled} className="w-6 h-6 hover: text-orange-600" />
+</button>
       <nav
         className={`fixed right-0 h-full w-full ${
           isToggled ? 'dark translate-x-0 transition-all duration-500' : '-translate-x-full transition-all duration-500'
@@ -71,3 +73,5 @@ const ToggleButton: React.FC = () => {
 };
 
 export default ToggleButton;
+
+

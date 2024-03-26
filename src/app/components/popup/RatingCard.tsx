@@ -1,7 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 
-
 type RatingCardProps = {
     handleRating: (rating: number) => void;
 };
@@ -32,7 +31,7 @@ const RatingCard: React.FC<RatingCardProps> = ({ handleRating }) => {
                             <button
                                 key={rating}
                                 onClick={() => handleSelectRating(rating)}
-                                className="px-3 py-1  rounded-lg bg-blue-500 hover:bg-blue-600 focus:outline-none cursor-pointer"
+                                className="px-3 py-1 rounded-lg bg-blue-500 hover:bg-blue-600 focus:outline-none cursor-pointer"
                             >
                                 {rating}
                             </button>
@@ -45,3 +44,5 @@ const RatingCard: React.FC<RatingCardProps> = ({ handleRating }) => {
 };
 
 export default RatingCard;
+
+

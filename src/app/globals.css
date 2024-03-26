@@ -64,8 +64,11 @@ body::-webkit-scrollbar {
     
   }
 }
+
 .menu_item.active{
-  transform:tranlate (100%,-100%)
+  -webkit-transform:tranlate (100%,-100%);
+      -ms-transform:tranlate (100%,-100%);
+          transform:tranlate (100%,-100%)
  }
 
 

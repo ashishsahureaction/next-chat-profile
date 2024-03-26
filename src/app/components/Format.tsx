@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import React, { useRef, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -32,7 +32,6 @@ import typescript from "@/assets/typescript.png";
 import upstash from "@/assets/upstash.png";
 
 
-gsap.registerPlugin(ScrollTrigger);
 
 interface Tool {
   src: any;
@@ -79,41 +78,28 @@ const pools: Pool[] = [
 
 
 const Format: React.FC = () => {
-  const toolsContainerRef = useRef<HTMLDivElement>(null);
-  const poolsContainerRef = useRef<HTMLDivElement>(null);
+  
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    let proxy = { skew: 0 },
+    skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
+    clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees. 
 
-    const toolsElements = toolsContainerRef.current?.querySelectorAll('.tool');
-    const poolsElements = poolsContainerRef.current?.querySelectorAll('.pool');
-
-    if (toolsElements && poolsElements) {
-      const timeline = gsap.timeline();
-
-      timeline.from(toolsElements, {
-        opacity: 0,
-        y: 100,
-        duration: 1,
-        stagger: 0.2,
-      });
-      timeline.from(poolsElements, {
-        opacity: 0,
-        y: 100,
-        duration: 1,
-        stagger: 0.2,
-      });
-
-      ScrollTrigger.create({
-        onUpdate: (self) => {
-          if (self.direction === 1) {
-            timeline.play();
-          } else {
-            timeline.reverse();
-          }
-        },
-      });
+ScrollTrigger.create({
+  onUpdate: (self) => {
+    let skew = clamp(self.getVelocity() / -300);
+    // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+    if (Math.abs(skew) > Math.abs(proxy.skew)) {
+      proxy.skew = skew;
+      gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
     }
+  }
+});
+
+// make the right edge "stick" to the scroll bar. force3D: true improves performance
+gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
+
   }, []);
 
 
@@ -126,7 +112,7 @@ const Format: React.FC = () => {
             <h2 className="text-6xl text-gray-950 dark:text-white font-semibold">Tools Of The Present And Future</h2>
             <p className="mt-6 text-gray-700 dark:text-gray-300">Frontend and Other technologies I prefer using</p>
           </div>
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 skewElem">
             {/* Render each tool */}
             {tools.map((tool, index) => (
               <div key={index} className="relative group p-8 flex flex-col justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
@@ -143,7 +129,7 @@ const Format: React.FC = () => {
           <div className="text-center">
             <p className="mt-1 text-gray-700 dark:text-gray-300">Other technologies</p>
           </div>
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 skewElem">
             {/* Render each tool */}
             {pools.map((pool, index) => (
               <div key={index} className="relative group p-8 flex flex-col justify-center items-center shadow-lg inset-shadow-lg rounded-xl">

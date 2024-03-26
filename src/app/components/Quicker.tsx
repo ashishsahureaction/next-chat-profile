@@ -1,22 +1,43 @@
 'use client'
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { IoLogoBuffer, IoLogoFlickr, IoLogoCodepen , IoLogoDribbble , IoLogoEuro, IoLogoIonic  } from "react-icons/io";
 
 
 const Quicker: React.FC = () => {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
   
-    const tl = gsap.timeline({ defaults: { duration: 1 } });
-
-    
-    const cards = document.querySelectorAll('.relative.group');
-
-   
-    tl.set(cards, { opacity: 0, y: 50 });
-
-    
-    tl.to(cards, { opacity: 1, y: 0, stagger: 0.2, ease: 'power3.out' });
+    const sections = gsap.utils.toArray('.website-section') as HTMLElement[];
+    sections.forEach(section => {
+      const elems = section.querySelectorAll('.js-content-opacity');
+      // Set things up
+      gsap.set(elems, { y: 50, opacity: 0 });
+      
+      ScrollTrigger.create({
+        trigger: section,
+        start: 'top 60%',
+        onEnter: () => gsap.to(elems, {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.2,
+          delay: 0.3,
+          ease: 'power3.out',
+          overwrite: 'auto'
+        }),
+        onLeaveBack: () => gsap.to(elems, {
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          stagger: 0.2,
+          delay: 0.3,
+          ease: 'power3.out',
+          overwrite: 'auto'
+        })
+      });
+    })
 
     
   }, []); 
@@ -24,13 +45,11 @@ const Quicker: React.FC = () => {
 
 
   return (<> 
-    <section>
+    <section className='website-section'>
 
-      <section className='one'> 
-      
-      </section>
-      <div className="py-16">
-        <div className="mx-auto px-6 max-w-6xl text-gray-500">
+     
+      <div className="py-16 ">
+        <div className="mx-auto px-6 max-w-6xl text-gray-500 ">
           <div className="text-center">
             <h2 className="text-3xl text-gray-950 dark:text-white font-semibold">Front-End Development</h2>
             <p className="mt-6 text-gray-700 dark:text-gray-300">Customer satisfaction comes first, and in order to do that I decided to pickup skills and principles to provide quality service</p>
@@ -39,7 +58,7 @@ const Quicker: React.FC = () => {
 
             {/* Card 1 */}
             <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center 
-            items-center  shadow-lg inset-shadow-lg rounded-xl ">
+            items-center  shadow-lg inset-shadow-lg rounded-xl js-content-opacity">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -53,7 +72,7 @@ const Quicker: React.FC = () => {
             </div>
             {/* Card 2 */}
             <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center shadow-lg 
-            inset-shadow-lg rounded-xl">
+            inset-shadow-lg rounded-xl js-content-opacity">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -66,7 +85,8 @@ const Quicker: React.FC = () => {
               </div>
             </div>
             {/* Card 3 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 
+            justify-center items-center shadow-lg inset-shadow-lg rounded-xl js-content-opacity">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -83,7 +103,7 @@ const Quicker: React.FC = () => {
       </div>
       
 <section className='two'>
-<div className="py-16">
+<div className="py-16 js-content-opacity">
         <div className="mx-auto px-6 max-w-6xl text-gray-500">
           <div className="text-center">
             <h2 className="text-3xl text-gray-950 dark:text-white font-semibold">Back-End Development</h2>
@@ -91,11 +111,12 @@ const Quicker: React.FC = () => {
           </div>
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {/* Card 1 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center  shadow-lg inset-shadow-lg rounded-xl">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center 
+            items-center  shadow-lg inset-shadow-lg rounded-xl js-content-opacity">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
-                dark:before:shadow-gray-950">
+                dark:before:shadow-gray-950 ">
                 <IoLogoDribbble color='blue' size={40}/>
               </div>
               <div className="mt-6 pb-6 text-center  ">System Integration
@@ -103,7 +124,8 @@ const Quicker: React.FC = () => {
               </div>
             </div>
             {/* Card 2 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center shadow-lg inset-shadow-lg  rounded-xl">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center 
+            items-center shadow-lg inset-shadow-lg  rounded-xl js-content-opacity">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -115,7 +137,8 @@ const Quicker: React.FC = () => {
               </div>
             </div>
             {/* Card 3 */}
-            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col  dark:bg-slate-200 justify-center items-center shadow-lg inset-shadow-lg rounded-xl">
+            <div className="relative group p-8 bg-white border border-gray-200 flex flex-col  dark:bg-slate-200 justify-center 
+            items-center shadow-lg inset-shadow-lg rounded-xl js-content-opacity">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow

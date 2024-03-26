@@ -1,13 +1,10 @@
 import four from "@/assets/four.jpg";
 import Image from 'next/image';
-import Welcome from "../Welcome";
+
 
 
 const Feature : React.FC = () => {    
-  return (<>
- 
-
- <section className="space-y-3 shadow-lg inset-shadow-lg overlay mt-4"><Welcome/></section>
+  return (
  
     
  <section className="mb-32">
@@ -22,8 +19,6 @@ const Feature : React.FC = () => {
            Crafting intuitive interfaces, collaborating effectively, and ensuring impeccable performance,
             ultimately captivating users with every interaction.
            </p>
-
-         
 
            <p className="mb-0 text-neutral-500 dark:text-neutral-300 text-justify">
            Begins with the innovation of intuitive user interfaces and 
@@ -50,15 +45,6 @@ const Feature : React.FC = () => {
      </div>
    </div>  
  </section>
-
-
-
-
-
-
- 
- 
-      </>
   );
 };
 
