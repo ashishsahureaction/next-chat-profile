@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import hdfc from '@/assets/hdfcnew.png';
 
-const InfoSection: React.FC<{ icon: JSX.Element; title: string; description: string }> = ({ icon, title, description }) => (
+const InfoSection: React.FC<{ icon: JSX.Element; title: string;  description: React.ReactNode  }> = ({ icon, title, description }) => (
   <div className="md:flex md:items-start md:-mx-4">
     <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
       {icon}
