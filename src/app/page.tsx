@@ -17,6 +17,8 @@ import Welcome from "./Welcome";
 import BackToTopButton from "./components/BackToTopButton";
 import Expe from "./components/Expe";
 // import { TbAlphabetCyrillic } from "react-icons/tb";
+import ScrollingCircle from  "./components/ScrollingCircle";
+
 
 
 
@@ -30,6 +32,7 @@ export default function Home() {
   const currentTime = new Date();
   return (
     <>
+    {/* <div className=""><ScrollingCircle/></div> */}
     <div className="flex flex-col items-center justify-start sm:my-8 sm:py-1 mx-auto max-w-3xl px-3 py-10 " >
 
     <div className="flex items-end justify-end fixed top-14 left-0 mb-16 mr-4 z-10">
@@ -70,11 +73,10 @@ export default function Home() {
       </section>
       </section>
       <section className="space-y-3 text-center ">
-       
-      
         <H2>Ask the chatbot anything about me</H2>
+        <ScrollingCircle/>
         <p>
-          Click the little <Bot size={30} className="inline pb-1 animate-pulse text-orange-600 shadow-lg inset-shadow-lg" /> icon in the top bar
+          Click the little  <Bot size={30} className="inline pb-1 animate-pulse text-orange-600 shadow-lg inset-shadow-lg" /> icon in the top bar
           to activate the AI chat. You can and ask the chatbot any question about me
           and it will find the relevant info on this website. The bot can even
           provide links to pages you&apos;re looking for and it boasts both draggable and adjustable functionality.
@@ -86,6 +88,7 @@ export default function Home() {
      
       <String/>
       <section className="space-y-3 text-center">
+        
        <ScrollSection/>
    </section>
 
@@ -124,10 +127,11 @@ export default function Home() {
               <div>
         <p className=" text-gray-700 dark:text-gray-300">No better way to get experience than real-life projects</p>
         </div>
-       <Slide/>
+       <Slide/>      
        
       </section>
 
+     
       
      
 </>

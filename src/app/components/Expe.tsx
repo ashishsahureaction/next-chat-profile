@@ -61,7 +61,7 @@ const Expe: React.FC = () => {
               <BiRightArrowAlt />
             </a>
             <div className="rounded-xl overflow-hidden">
-              <Image src={eightfour} alt="" width={600} height={600} loading="lazy"/>
+              <Image src={eightfour} alt="Expe Image" width={600} height={600} loading="lazy"/>
             </div>
            
           </div>

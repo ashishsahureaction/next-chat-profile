@@ -58,7 +58,7 @@ const Quicker: React.FC = () => {
 
             {/* Card 1 */}
             <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center 
-            items-center  shadow-lg inset-shadow-lg rounded-xl js-content-opacity">
+            items-center  shadow-lg inset-shadow-lg rounded-xl js-content-opacity hover:scale-105">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -72,7 +72,7 @@ const Quicker: React.FC = () => {
             </div>
             {/* Card 2 */}
             <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center items-center shadow-lg 
-            inset-shadow-lg rounded-xl js-content-opacity">
+            inset-shadow-lg rounded-xl js-content-opacity hover:scale-105">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -86,7 +86,7 @@ const Quicker: React.FC = () => {
             </div>
             {/* Card 3 */}
             <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 
-            justify-center items-center shadow-lg inset-shadow-lg rounded-xl js-content-opacity">
+            justify-center items-center shadow-lg inset-shadow-lg rounded-xl js-content-opacity hover:scale-105">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -112,7 +112,7 @@ const Quicker: React.FC = () => {
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {/* Card 1 */}
             <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center 
-            items-center  shadow-lg inset-shadow-lg rounded-xl js-content-opacity">
+            items-center  shadow-lg inset-shadow-lg rounded-xl js-content-opacity hover:scale-105">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -125,7 +125,7 @@ const Quicker: React.FC = () => {
             </div>
             {/* Card 2 */}
             <div className="relative group p-8 bg-white border border-gray-200 flex flex-col dark:bg-slate-200 justify-center 
-            items-center shadow-lg inset-shadow-lg  rounded-xl js-content-opacity">
+            items-center shadow-lg inset-shadow-lg  rounded-xl js-content-opacity hover:scale-105">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow
@@ -138,7 +138,7 @@ const Quicker: React.FC = () => {
             </div>
             {/* Card 3 */}
             <div className="relative group p-8 bg-white border border-gray-200 flex flex-col  dark:bg-slate-200 justify-center 
-            items-center shadow-lg inset-shadow-lg rounded-xl js-content-opacity">
+            items-center shadow-lg inset-shadow-lg rounded-xl js-content-opacity hover:scale-105">
               <div className="border border-green-500/10 flex relative rounded-lg dark:bg-gray-900 dark:border-white/15 
               before:rounded-[7px] before:absolute before:inset-0 before:border-t before:border-white before:from-green-100
                dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow

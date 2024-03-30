@@ -23,14 +23,14 @@ const ScrollSection: React.FC = () => {
           x: 0,
         },
         {
-          x: "-300vw",
+          x: "-100vw",
           ease: Power0.easeNone, // Specify easing function
           duration: 1,
           scrollTrigger: {
             trigger: triggerElement,
             start: "top top",
             end: "100 top",
-            scrub: 0.6,
+            scrub: 4,
             pin: true,
           },
         }
@@ -54,3 +54,5 @@ const ScrollSection: React.FC = () => {
 };
 
 export default ScrollSection;
+
+

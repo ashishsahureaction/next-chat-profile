@@ -38,7 +38,7 @@ const ToggleButton: React.FC = () => {
         <div className="flex justify-center items-center p-20">
           <div className={`${isToggled ? 'w-3/4' : 'hidden'} sm:w-3/4 w-full h-full absolute right-0`}>
             <ul>
-              <li className="menu_item bg-white z-30 absolute right-0 top-0 border-b-2 border-l-2 border-zinc-400 group
+              <li className="menu_item bg-gray-200 z-30 absolute rounded-lg right-0 top-0 border-b-2 border-l-2 border-zinc-400 group
                hover:bg-orange-600 duration-500 font-bebas text-[6vw] sm:text-[3vw] h-2/4 w-2/4 dark:text-zinc-600 dark:hover:text-black" >
                 <Link href="/" passHref legacyBehavior>
                   <a onClick={handleLinkClick} className="h-full leading-none group-hover:text-white duration-300 flex justify-start pl-5 pb-5 items-end">
@@ -46,7 +46,7 @@ const ToggleButton: React.FC = () => {
                   </a>
                 </Link>
               </li>
-              <li className="menu_item bg-white z-20 absolute right-0 top-0 border-b-2 border-l-2 border-zinc-400 group
+              <li className="menu_item bg-gray-200 z-20 rounded-lg absolute right-0 top-0 border-b-2 border-l-2 border-zinc-400 group
                hover:bg-orange-600 duration-500 font-bebas text-[6vw] sm:text-[3vw] h-3/4 w-3/4 dark:text-zinc-600 
                 dark:hover:text-black" >
                 <Link href="/ashish_resume.pdf"  passHref legacyBehavior>
@@ -55,7 +55,7 @@ const ToggleButton: React.FC = () => {
                   </a>
                 </Link>
               </li>
-              <li className="menu_item bg-white z-10 absolute right-0 top-0 border-b-2 border-l-2 border-zinc-400 group
+              <li className="menu_item bg-gray-200 rounded-lg z-10 absolute right-0 top-0 border-b-2 border-l-2 border-zinc-400 group
                hover:bg-orange-600 duration-500 font-bebas text-[6vw] sm:text-[3vw] h-full w-full dark:text-zinc-600 dark:hover:text-black">
                 <Link href="/projects" passHref legacyBehavior>
                   <a onClick={handleLinkClick} className="h-full leading-none group-hover:text-white duration-300 flex justify-start pl-5 pb-5 items-end">

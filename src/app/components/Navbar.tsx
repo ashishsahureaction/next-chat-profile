@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 
 
+
 interface NavLinkProps {
   href: string;
   text: string;

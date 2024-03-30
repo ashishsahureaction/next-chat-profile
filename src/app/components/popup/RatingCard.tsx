@@ -11,7 +11,7 @@ const RatingCard: React.FC<RatingCardProps> = ({ handleRating }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowRating(true);
-        }, 3000);
+        }, 20000);
 
         return () => clearTimeout(timer);
     }, []);

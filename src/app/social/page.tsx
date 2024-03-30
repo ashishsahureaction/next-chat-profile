@@ -146,6 +146,11 @@ export default function Page() {
       <section className="space-y-3 ">
         <H2  className="group hover:text-gray-600 transition-colors duration-300"><span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Business Inquiries</H2>
         <p>
+        I will be your ultimate ally in overcoming the challenges that hinder your full potential. Steer your business toward success with me by your side to help you navigate your journey. 
+        Together, we will conquer uncertainties	 and propel your business past new frontiers.
+        </p>
+        
+        <p>
         Let&apos;s connect and explore possibilities together! Feel free to reach out to me to discuss collaborations, 
         and opportunities, or simply to exchange insights on the latest industry trends., please reach out me via email at{" "}
           <a

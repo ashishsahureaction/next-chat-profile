@@ -26,7 +26,7 @@ export default function Page() {
         <p>
         I am interested in lucrative opportunities - especially on ambitious
             or large projects. However, if you have any other requests or
-            questions, don&apos;t  hesitate to contact me using below form either.
+            questions, Please feel-free to contact me using below form either.
         </p>
         <hr className="border-muted" />
         <ContactPage/>        
