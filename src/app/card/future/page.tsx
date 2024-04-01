@@ -23,7 +23,7 @@ const Future: React.FC = () => {
         <div className="lg:flex lg:items-center">
           <div className="w-full space-y-12 lg:w-1/2">
             <div>
-              <h1 className="text-2xl font-semibold capitalize lg:text-3xl">Future Genrali <br /> Senior Front-End Developer</h1>
+              <h1 className="text-2xl font-semibold capitalize lg:text-3xl">Genrali Global Health <br /> Senior Front-End Developer</h1>
               <div className="mt-2">
                 <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
                 <span className="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>

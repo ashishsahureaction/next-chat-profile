@@ -18,6 +18,7 @@ import BackToTopButton from "./components/BackToTopButton";
 import Expe from "./components/Expe";
 // import { TbAlphabetCyrillic } from "react-icons/tb";
 import ScrollingCircle from  "./components/ScrollingCircle";
+import Testimonials from "./components/Testimonials";
 
 
 
@@ -102,26 +103,27 @@ export default function Home() {
     
        <Quicker/>
        <BackToTopButton/>
-       
-       
       </section>
 
       <String/>
       <section className="space-y-3 text-center ">
            <Format/>
       </section>
+
+      <String/>
+<section className="space-y-3 text-center ">
+     <Testimonials/>          
+</section>
       
       <String/>
 
       <section className="space-y-3 text-center ">
-           <LatestArticle/>
-           
-           
+           <LatestArticle/>          
       </section>
 
-      <String/>
+    
 
-      
+      <String/>
       <section className="space-y-3 text-center mx-auto max-w-3xl px-3 py-10  ">
         <H1>Successful Projects I&apos;m Proud Of</H1>
               <div>
@@ -129,9 +131,7 @@ export default function Home() {
         </div>
        <Slide/>      
        
-      </section>
-
-     
+      </section>   
       
      
 </>

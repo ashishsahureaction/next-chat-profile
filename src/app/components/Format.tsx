@@ -32,7 +32,6 @@ import typescript from "@/assets/typescript.png";
 import upstash from "@/assets/upstash.png";
 
 
-
 interface Tool {
   src: any;
   alt: string;
@@ -73,9 +72,7 @@ const pools: Pool[] = [
   { src: serverless, alt: "Serverless" },
   { src: upstash, alt: "Upstash" },
 
-
 ];
-
 
 const Format: React.FC = () => {
   
@@ -101,7 +98,6 @@ ScrollTrigger.create({
 gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
 
   }, []);
-
 
 
   return (
@@ -146,3 +142,5 @@ gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
 };
 
 export default Format;
+
+
