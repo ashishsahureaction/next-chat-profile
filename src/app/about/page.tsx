@@ -3,15 +3,13 @@ import tag from "@/assets/tag.jpg";
 import tag1 from "@/assets/tag1.jpg";
 import tag2 from "@/assets/tag2.jpg";
 import tag3 from "@/assets/tag3.jpg";
-import tag4 from "@/assets/tag4.jpg";
-import eighttwo from "@/assets/eighttwo.jpg";
-import tag6 from "@/assets/tag6.jpg";
 import { H1 } from "../components/ui/H1";
 import { H2 } from "../components/ui/H2";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import BackToTopButton from "../components/BackToTopButton";
+import Gallery from './Gallery'
 
 
 
@@ -51,8 +49,7 @@ export default function Page() {
         <p> I&apos;m passionate about building cool apps and websites and super Desi when it comes to Cricket and Bollywood. 
           I love to read and travel.</p>
       </section>
-      <hr className="border-muted" />
-
+      <hr className="border-orange-600 dark:border-primary" />
 
       <article className="rounded-xl p-4 ring  sm:p-6 lg:p-8">
   <div className="flex items-start sm:gap-8">
@@ -63,12 +60,12 @@ export default function Page() {
       in front-end development or discuss our favorite programming language&ldquo;⚡
       </p>
 
-
     </div>
   </div>
 </article>
+<hr className="border-orange-600 dark:border-primary" />
 
-      <section className="space-y-3 shadow-lg inset-shadow-lg ">
+      <section className="space-y-3  ">
         <H2 className="group hover:text-gray-600 transition-colors duration-300 ">
           <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Skills</H2>
         <p>
@@ -87,10 +84,9 @@ export default function Page() {
         such as Google Analytics, Jira, Git, Docker, Azure, and AWS bolster project management and deployment processes. 
         </p>
       </section>
-      <hr className="border-muted" />
+      <hr className="border" />
 
-
-      <section className="space-y-3 shadow-lg inset-shadow-lg">
+      <section className="space-y-3 ">
   <H2 className="group hover:text-gray-600 transition-colors duration-300">
     <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Soft-Skills
   </H2>
@@ -107,11 +103,10 @@ export default function Page() {
     </li>
   </ul>
 </section>
-      <hr className="border-muted" />
+      <hr className="border" />
 
 
-
-      <section className="space-y-3 shadow-lg inset-shadow-lg">
+      <section className="space-y-3 ">
   <H2 className="group hover:text-gray-600 transition-colors duration-300">
     <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Side-Projects
   </H2>
@@ -202,10 +197,9 @@ export default function Page() {
   </ul>
 </section>
 
+      <hr className="border " />
 
-      <hr className="border-muted " />
-
-      <section className="space-y-3 shadow-lg inset-shadow-lg">
+      <section className="space-y-3 ">
         <H2 className="group hover:text-gray-600 transition-colors duration-300">
           <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Hobbies</H2>
         <p>
@@ -218,16 +212,17 @@ export default function Page() {
           I&apos;m also very much into self-improvement, nutrition, and positive
           psychology.
         </p>
-        
-        <Image
+        <div className=" hover:bg-orange-600 transition duration-500 ease-in-out transform hover:filter hover:grayscale">
+        <Image 
           src={bjj}
           alt="whitewater river rafting group photo"
           className="rounded-md shadow-lg inset-shadow-lg"
           loading="lazy"
         />
+        </div>
 
-      <div className="relative shadow-lg inset-shadow-lg">
-      <div className="sticky top-0 flex flex-col items-center justify-center h-screen ">
+      <div className="relative shadow-lg inset-shadow-lg ">
+      <div className="sticky top-0 flex flex-col items-center justify-center h-screen  ">
     <Image
       src={tag}
       alt="whitewater river rafting group photo"
@@ -263,48 +258,22 @@ export default function Page() {
 
         </div> 
 
-        <section className="space-y-3 shadow-lg inset-shadow-lg ">
+      <section className="space-y-3  ">
   <H2 className="group hover:text-gray-600 transition-colors duration-300">
     <span className="opacity-0 group-hover:opacity-30 ml-1">#</span>Gallery
   </H2>
           <div className="flex flex-wrap ">
-  
-          
-          <div className="w-1/4 p-1 shadow-lg inset-shadow-lg" >
-            <Image src={tag} alt="river rafting group photo" className="rounded-md  hover:scale-105" width={300} height={300} loading="lazy"/>
-          </div>
-          <div className="w-1/4 p-1">
-            <Image src={tag1} alt="river rafting group photo" className="rounded-md  hover:scale-105" width={300} height={300} loading="lazy" />
-          </div>
-          <div className="w-1/4 p-1">
-            <Image src={tag2} alt="river rafting group photo" className="rounded-md hover:scale-105" width={300} height={300} loading="lazy" />
-          </div>
-          <div className="w-1/4 p-1">
-            <Image src={tag3} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy" />
-          </div>
-          <div className="w-1/4 p-1">
-            <Image src={tag4} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy" />
-          </div>
-          <div className="w-1/4 p-1">
-            <Image src={tag6} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy" />
-          </div>
-          <div className="w-1/4 p-1">
-            <Image src={tag6} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy" />
-          </div>
-          <div className="w-1/4 p-1">
-            <Image src={eighttwo} alt="river rafting group photo" className="rounded-md  hover:scale-105 " width={300} height={300} loading="lazy"/>
-          </div>
-         
+
+         <Gallery/>
           
         </div>      
         
 
       </section>
 
+      <hr className="border" />
 
-      <hr className="border-muted" />
-
-      <section className="space-y-3 shadow-lg inset-shadow-lg">
+      <section className="space-y-3 ">
         <H2 className="group hover:text-gray-600 transition-colors duration-300">
           <span className="opacity-0 group-hover:opacity-30 ml-1 ">#</span>Looking Ahead</H2>
         <p>
@@ -320,3 +289,4 @@ export default function Page() {
     
   );
 }
+

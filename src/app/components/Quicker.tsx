@@ -65,7 +65,7 @@ const Quicker: React.FC = () => {
                 dark:before:shadow-gray-950">
                 <IoLogoFlickr color='blue' size={40}/>
               </div>
-              <div className="mt-6 pb-6 text-center  ">Continous Support
+              <div className="mt-6 pb-6 text-center text-orange-600  ">Continous Support
                 <p className="text-gray-700 dark:text-gray-900">Optimize web software for competitiveness, ensuring swift 
                 updates and regular feature releases through efficient DevOps practices.</p>
               </div>
@@ -79,7 +79,7 @@ const Quicker: React.FC = () => {
                 dark:before:shadow-gray-950">
                 <IoLogoCodepen color='blue' size={40}/>
               </div>
-              <div className="mt-6 pb-6 text-center  ">Frontend design/dev
+              <div className="mt-6 pb-6 text-center text-orange-600   ">Frontend design/dev
                 <p className="text-gray-700 dark:text-gray-900">Analyze user needs, design UIs, to build web apps that meet 
                 those needs effectively.</p>
               </div>
@@ -93,7 +93,7 @@ const Quicker: React.FC = () => {
                 dark:before:shadow-gray-950">
                 <IoLogoBuffer color='blue' size={40}/>
               </div>
-              <div className="mt-6 pb-6 text-center  ">Feedback Collaboration
+              <div className="mt-6 pb-6 text-center text-orange-600  ">Feedback Collaboration
                 <p className="text-gray-700 dark:text-gray-900">Incorporating user feedback into development processes for continuous improvement and enhanced user experience.</p>
               </div>
             </div>
@@ -119,7 +119,7 @@ const Quicker: React.FC = () => {
                 dark:before:shadow-gray-950 ">
                 <IoLogoDribbble color='blue' size={40}/>
               </div>
-              <div className="mt-6 pb-6 text-center  ">System Integration
+              <div className="mt-6 pb-6 text-center text-orange-600   ">System Integration
                 <p className="text-gray-700 dark:text-gray-900">Streamlining the interaction between different software systems to optimize efficiency, data flow, and functionality across the organization.</p>
               </div>
             </div>
@@ -132,7 +132,7 @@ const Quicker: React.FC = () => {
                 dark:before:shadow-gray-950">
                 <IoLogoEuro color='blue' size={40}/>
               </div>
-              <div className="mt-6 pb-6 text-center  ">Infrastructure Support
+              <div className="mt-6 pb-6 text-center text-orange-600  ">Infrastructure Support
                 <p className="text-gray-700 dark:text-gray-900">Ensuring smooth operation and reliability of infrastructure through essential technical assistance and maintenance.</p>
               </div>
             </div>
@@ -145,7 +145,7 @@ const Quicker: React.FC = () => {
                 dark:before:shadow-gray-950">
                 <IoLogoIonic color='blue' size={40}/>
               </div>
-              <div className="mt-6 pb-6 text-center  ">Architecture Design
+              <div className="mt-6 pb-6 text-center text-orange-600  ">Architecture Design
                 <p className="text-gray-700 dark:text-gray-900">
 Designing detailed software/system blueprints for scalability, performance, security, and business alignment.</p>
               </div>

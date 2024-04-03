@@ -19,6 +19,7 @@ import Expe from "./components/Expe";
 // import { TbAlphabetCyrillic } from "react-icons/tb";
 import ScrollingCircle from  "./components/ScrollingCircle";
 import Testimonials from "./components/Testimonials";
+import TimelineOne from "./components/TimelineOne";
 
 
 
@@ -62,7 +63,7 @@ export default function Home() {
             IT firm to work on cutting-edge projects with the latest technologies.
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <Image
             src={me}
             alt="A photo of me"
@@ -96,6 +97,12 @@ export default function Home() {
    <String/>
       <section className="space-y-3 text-center ">
     <Expe/>      
+      </section>
+
+      <String/>
+      <section className="space-y-3 text-center ">
+    
+       <TimelineOne/>
       </section>
   
    <String/>

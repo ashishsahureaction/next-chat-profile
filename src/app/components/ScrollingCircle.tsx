@@ -24,7 +24,7 @@ const ScrollingCircle: React.FC = () => {
   return (
     <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-screen h-screen pointer-events-none ">
       <div ref={circleRef} className="w-screen h-screen rounded-full bg-orange-600 flex items-center justify-center pointer-events-auto">
-        <span className="text-white dark:text-transparent pointer-events-auto">Welcome</span>
+       
       </div>
     </div>
   );
