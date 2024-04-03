@@ -77,7 +77,7 @@ const LatestArticle: React.FC = () => {
               Search
             </div>
             <p className="mb-6 text-sm text-neutral-500 dark:text-neutral-400 gs_reveal">
-              Deployed <u>14.12.2023</u> by <a href="#!">Google Api</a>
+              Deployed <u>14.12.2023</u> by <a href="/projects/google">Google Api</a>
             </p>
             <p className="mb-6 text-neutral-500 dark:text-neutral-300 gs_reveal">
               One of the most noticeable impacts of technology on society is its role in facilitating communication and connectivity. Technology has revolutionized society, facilitating communication, innovation, and efficiency. It connects people globally, transforms industries, and improves access to education and healthcare.
@@ -98,14 +98,14 @@ const LatestArticle: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-6/12 ml-16          lg:pr-6 gs_reveal_fromRight">
+          <div className="w-full lg:w-6/12 ml-16  lg:pr-6 gs_reveal_fromRight">
             <h3 className="mb-4 text-2xl font-bold gs_reveal">Mern-Blog Exhibition !</h3>
             <div className="mb-4 flex items-center text-sm font-medium text-primary dark:text-primary-400 gs_reveal">
               <SiSmartthings size={16} color='green' />
               Sharing
             </div>
             <p className="mb-6 text-sm text-neutral-500 dark:text-neutral-400 gs_reveal">
-              Deployed <u>12.03.2024</u> by <a href="#!">Mern</a>
+              Deployed <u>12.03.2024</u> by <a href="/projects/blog">Mern</a>
             </p>
             <p className="mb-6 text-neutral-500 dark:text-neutral-300 gs_reveal">
               Blogs, once considered personal online diaries, have evolved into powerful platforms that shape opinions, influence markets, and connect communities in the digital age. As blogging gained popularity, it began to transcend personal narratives and take on a more prominent role in shaping public discourse.
@@ -118,9 +118,10 @@ const LatestArticle: React.FC = () => {
 
         <div className="flex flex-wrap">
         <div className="mb-6 w-full lg:mb-0 lg:w-4/12 lg:pr-6 ml-32 gs_reveal_fromLeft">
-            <div className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%]  gs_reveal gs_reveal_fromLeft hover:scale-105 bg-no-repeat shadow-lg dark:shadow-black/20" data-te-ripple-init data-te-ripple-color="light">
+            <div className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%]  gs_reveal gs_reveal_fromLeft hover:scale-105
+             bg-no-repeat shadow-lg dark:shadow-black/20 transition duration-500 ease-in-out transform hover:filter hover:grayscale" data-te-ripple-init data-te-ripple-color="light">
               <Image src={three} className="w-full" alt="Louvre" height={700} width={800} objectFit="contain" loading="lazy"/>
-              <a href="#!">
+              <a href="/projects/dairy">
                 <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
               </a>
             </div>
@@ -133,7 +134,7 @@ const LatestArticle: React.FC = () => {
               Business
             </div>
             <p className="mb-6 text-sm text-neutral-500 dark:text-neutral-400 gs_reveal">
-              Deployed <u>10.06.2023</u> by <a href="#!">LLM</a>
+              Deployed <u>10.06.2023</u> by <a href="/projects/dairy">LLM</a>
             </p>
             <p className="mb-6 text-neutral-500 dark:text-neutral-300 gs_reveal">
               Dairy farming plays a vital role in global agriculture, providing essential nutrients and livelihoods for millions of people worldwide. However, the industry faces numerous challenges, including environmental sustainability, animal welfare, and economic viability.
