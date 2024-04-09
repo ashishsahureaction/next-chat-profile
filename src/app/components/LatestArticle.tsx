@@ -72,7 +72,7 @@ const LatestArticle: React.FC = () => {
 
           <div className="w-full lg:w-6/12 lg:pl-6 mb-6 gs_reveal_fromRight">
             <h3 className="mb-4 text-2xl font-bold gs_reveal">Google Clone !</h3>
-            <div className="mb-4 flex items-center text-sm font-medium text-danger dark:text-danger-500 gs_reveal">
+            <div className="mb-4 flex items-center text-sm font-medium text-danger text-red-500 gs_reveal">
               <SiYourtraveldottv size={16} color='blue' />
               Search
             </div>
@@ -91,7 +91,7 @@ const LatestArticle: React.FC = () => {
         <div className="mb-16 flex flex-wrap lg:flex-row-reverse">
         <div className="mb-6 w-full lg:mb-0 lg:w-4/12 lg:pr-6 ml-16  mr-24 gs_reveal_fromLeft">
             <div className="ripple relative overflow-hidden rounded-lg bg-cover gs_reveal gs_reveal_fromRight  hover:scale-105 bg-[50%] bg-no-repeat shadow-lg">
-              <Image src={one} className="w-full" alt="Louvre" height={700} width={800} objectFit="contain" loading="lazy" />
+              <Image src={one} className="w-full" alt="Louvre" height={700} width={800} loading="lazy" />
               <a href="/projects/blog">
                 <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
               </a>
@@ -120,7 +120,7 @@ const LatestArticle: React.FC = () => {
         <div className="mb-6 w-full lg:mb-0 lg:w-4/12 lg:pr-6 ml-32 gs_reveal_fromLeft">
             <div className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%]  gs_reveal gs_reveal_fromLeft hover:scale-105
              bg-no-repeat shadow-lg dark:shadow-black/20 transition duration-500 ease-in-out transform hover:filter hover:grayscale" data-te-ripple-init data-te-ripple-color="light">
-              <Image src={three} className="w-full" alt="Louvre" height={700} width={800} objectFit="contain" loading="lazy"/>
+              <Image src={three} className="w-full" alt="Louvre" height={700} width={800}  loading="lazy"/>
               <a href="/projects/dairy">
                 <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
               </a>
@@ -129,7 +129,7 @@ const LatestArticle: React.FC = () => {
 
           <div className="w-full lg:w-6/12 lg:pl-6 gs_reveal_fromRight">
             <h3 className="mb-4 text-2xl font-bold gs_reveal">Smart Dairy</h3>
-            <div className="mb-4 flex items-center text-sm font-medium text-yellow-600 gs_reveal">
+            <div className="mb-4 flex items-center text-sm font-medium text-yellow-500 gs_reveal">
               <SiGoogleearthengine size={16} color='red' />
               Business
             </div>

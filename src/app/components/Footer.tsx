@@ -17,8 +17,12 @@ export default function Footer() {
 
 <hr></hr>
     <footer className=" text-center text-surface/75  lg:text-left">
+    <footer className="relative ">
+  
+      
 
       <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
+        
         <div className="me-12 hidden lg:block">
           <span>Get connected with me on social networks:</span>
         </div>
@@ -45,8 +49,11 @@ export default function Footer() {
       </div>
 
       <div className="mx-6 py-10 text-center md:text-left">
+        
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          
           <div className="">
+            
             <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
               <span className="me-3">
                 <Image src={logo} alt="TW Elements" height={120} width={120} loading="lazy"/>
@@ -58,6 +65,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
+
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start ">Work</h6>
             <p className="mb-4">
               <a  className="hover:underline" href="/card/cencora">Cencora</a>
@@ -124,13 +132,26 @@ export default function Footer() {
 
     <hr></hr>  
       <div className="bg-black/5 p-6 text-center">
+        
       <footer className="group overflow-hidden bg-gradient-to-tr  ">
+        
       <nav className="mx-auto flex max-w-3xl gap-3 p-4 before:duration-700 before:absolute dark before:w-28 before:h-28 
       before:bg-transparent before:blur-none before:border-8 before:opacity-50 before:rounded-full before:-left-4 before:-top-12 
       relative z-10 group-hover:before:top-28 group-hover:before:left-44 group-hover:before:scale-125 group-hover:before:blur">
 
 <div className=" px-4 py-8 sm:px-6 lg:px-8  ">
-    <div className="sm:flex sm:items-center sm:justify-between     ">
+<svg
+    className="absolute bottom-0 w-full h-60 bg-transparent left-0"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 320"
+  >
+    <path
+      fill="#ff5520"
+      fillOpacity="1"
+      d="M0,64L34.3,74.7C68.6,85,137,107,206,106.7C274.3,107,343,85,411,80C480,75,549,85,617,90.7C685.7,96,754,96,823,101.3C891.4,107,960,117,1029,112C1097.1,107,1166,85,1234,96C1302.9,107,1371,149,1406,170.7L1440,192L1440,0L1406,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+    ></path>
+  </svg>
+    <div className="sm:flex sm:items-center sm:justify-between ">
       <div className="flex justify-center sm:justify-start  ">
     
       <ul className="  mt-4  flex items-center gap-x-2 text-sm md:mt-0 text-justify dark:bg-primary-dark rounded-md p-1">Built with:
@@ -203,6 +224,7 @@ export default function Footer() {
   </nav>   
 </footer>
   </div>
+</footer>
 </footer>
 </>
     

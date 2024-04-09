@@ -12,8 +12,6 @@ import BackToTopButton from "../components/BackToTopButton";
 import Gallery from './Gallery'
 
 
-
-
 export const metadata: Metadata = {
   title: "About Me",
   description: "Learn more about Ashish Sahu and his work.",
@@ -104,7 +102,6 @@ export default function Page() {
   </ul>
 </section>
       <hr className="border" />
-
 
       <section className="space-y-3 ">
   <H2 className="group hover:text-gray-600 transition-colors duration-300">
@@ -212,14 +209,41 @@ export default function Page() {
           I&apos;m also very much into self-improvement, nutrition, and positive
           psychology.
         </p>
-        <div className=" hover:bg-orange-600 transition duration-500 ease-in-out transform hover:filter hover:grayscale">
-        <Image 
-          src={bjj}
-          alt="whitewater river rafting group photo"
-          className="rounded-md shadow-lg inset-shadow-lg"
-          loading="lazy"
-        />
+
+        <div className="group relative">
+  <Image 
+    src={bjj}
+    alt="whitewater river rafting group photo"
+    className="rounded-md shadow-lg inset-shadow-lg"
+    loading="lazy"
+  />
+  <div className="absolute inset-0 bg-orange-600/60 opacity-0 rounded-md group-hover:opacity-100 flex justify-center items-center transition-opacity duration-1000">
+    <div className="max-w-sm px-2 py-1 space-y-1">
+      <div className="space-y-2 text-white font-bold md:tracking-tight md:text-3xl">
+        Embark on an Epic River Rafting & Tubing Journey in Rishikesh..!
+      </div>
+      <div>
+        <div className="flex flex-wrap py-6 gap-2 border-t border-dashed border-gray-400">
+          <a href="#" className="px-3 py-1 rounded-sm hover:underline bg-white text-gray-900" role="button">Rishikesh</a>
+          <a href="#" className="px-3 py-1 rounded-sm hover:underline bg-white text-gray-900" role="button">RiverRafting</a>
+          <a href="#" className="px-3 py-1 rounded-sm hover:underline bg-white text-gray-900" role="button">Tubing</a>
         </div>
+        <h4 className="text-lg text-white font-semibold">Make a Splash</h4>
+        <ul className="ml-4 space-y-1 list-disc">
+          <li>
+            <a href="#" className="hover:underline text-white">Ride the Rapids, Feel the Rush !</a>
+          </li>
+          <li>
+            <a href="#" className="hover:underline text-white">From Calm Waters to Thrilling Rapids !</a>
+          </li>
+          <li>
+            <a href="#" className="hover:underline text-white">Where Every Wave Beckons an Adventure !</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
       <div className="relative shadow-lg inset-shadow-lg ">
       <div className="sticky top-0 flex flex-col items-center justify-center h-screen  ">
@@ -227,7 +251,6 @@ export default function Page() {
       src={tag}
       alt="whitewater river rafting group photo"
       className="rounded-md"
-      objectFit="contain"
       loading="lazy"
     />
   </div>
@@ -289,4 +312,6 @@ export default function Page() {
     
   );
 }
+
+
 

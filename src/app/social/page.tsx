@@ -2,8 +2,9 @@
 import { H1 } from "../components/ui/H1";
 import { H2 } from "../components/ui/H2";
 import Menu from '../card/Menu'
-
 import { Metadata } from "next";
+import FourBars from  "./FourBars";
+import TwoBars from "./TwoBars"
 
 export const metadata: Metadata = {
   title: "Social Media",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
+    <>
     <section className="space-y-6 text-justify shadow-lg inset-shadow-lg mx-auto max-w-3xl px-3 py-10 ">
       <H1>Social Media</H1>
       <section className="space-y-3">
@@ -196,5 +198,12 @@ export default function Page() {
       <div className="flex justify-end " ><Menu/></div>
       
     </section>
+    <section>
+      <TwoBars/>
+    </section>
+    <section>
+      <FourBars/>
+    </section>
+    </>
   );
 } 

@@ -13,7 +13,7 @@ const String: React.FC<GreetingProps> = () => {
 
   useEffect(() => {
     setPath(progress);
-  }, [ ]);
+  }, [ ]  );
 
   const setPath = (progress: number) => {
     const width: number = window.innerWidth * 1;

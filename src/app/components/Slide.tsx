@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ image }) => {
     
     <header>
       <div className="relative overflow-hidden rounded-lg shadow-lg mt-6">
-        <Image src={image.src} alt={image.alt} height={700} width={800} objectFit="cover" loading="lazy"/>
+        <Image src={image.src} alt={image.alt} height={700} width={800}  loading="lazy"/>
       
         <div className="absolute inset-0 flex items-center justify-center bg-fixed">
           <div className="text-center text-white">
