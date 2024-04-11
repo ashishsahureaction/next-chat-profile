@@ -19,6 +19,7 @@ import eightthree from '@/assets/eightthree.jpg';
 import sevenone from '@/assets/sevenone.jpg';
 import eight from '@/assets/eight.jpg';
 import eighttwo from '@/assets/eighttwo.jpg';
+import sevensix from '@/assets/sevensix.jpg';
 
 interface SlideProps {
   src: any;
@@ -33,14 +34,14 @@ interface HeaderProps {
 
 const Slide: React.FC = () => {
   const images: SlideProps[] = [
-    { src: one, alt: 'google', title: 'Google Search Engine Optimization Services', tech: 'NextJs, Redux, FireBase' },
-    { src: two, alt: 'blog', title: 'Blog Post Writing Services', tech: 'MangoDB, Redux-Saga, SCSS' },
-    { src: three, alt: 'weather', title: 'Weather Update', tech: 'API, Tailwind, MUI' },
-    { src: four, alt: 'book', title: 'Book Cover Design & Printing', tech: 'OpenAI, Upstarx, Hook' },
+    { src: four, alt: 'google', title: 'Google Search Engine Optimization Services', tech: 'NextJs, Redux, FireBase' },
+    { src: sevensix, alt: 'insta', title: 'Instagram', tech: 'Nextjs, Tailwind, FireBase, NextAuth' },
+    { src: one, alt: 'blog', title: 'Blog Post Writing Services', tech: 'MangoDB, Redux-Saga, SCSS' },
+    { src: sevenone, alt: 'weather', title: 'Weather Update', tech: 'API, Tailwind, MUI' },
+    { src: two, alt: 'book', title: 'Book Cover Design & Printing', tech: 'OpenAI, Upstarx, Hook' },
     { src: eightfour, alt: 'profile', title: 'Profile Picture Design', tech: 'AstraData, NoSQL, FireBase' },
-    { src: eightthree, alt: 'dairy', title: 'Dairy Food Label Design', tech: 'ChatGPT, React, JavaScript' },
-    { src: sevenone, alt: 'movie', title: 'Movie Surfing', tech: 'TypeScript, NodeJs, ExpressJs' },
-    { src: eighttwo, alt: 'food', title: 'Food Delivery at Your Place', tech: 'Angular, Bootstarp, FireBase' },
+    { src: three, alt: 'dairy', title: 'Dairy Food Label Design', tech: 'ChatGPT, React, JavaScript' },
+    { src: eightthree, alt: 'movie', title: 'Movie Surfing', tech: 'TypeScript, NodeJs, ExpressJs' },
     { src: eight, alt: 'food', title: 'Food Delivery at Your Place', tech: 'Angular, Bootstarp, FireBase' },
 
   ];

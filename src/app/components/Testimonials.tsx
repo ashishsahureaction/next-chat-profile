@@ -71,9 +71,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <Head>
-        <title>Testimonials</title>
-      </Head>
+      
       <section className='website-section'>
       <div className="flex flex-col items-start justify-center min-h-screen py-2 px-10 rounded-3xl ml-24 js-content-opacity">
         <div className=" mt-0">

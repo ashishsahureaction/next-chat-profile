@@ -1,10 +1,9 @@
 import { H1 } from "../components/ui/H1";
-import { H2 } from "../components/ui/H2";
 import { Metadata } from "next";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { GiCow } from "react-icons/gi";
-import { SiGoogledatastudio } from "react-icons/si";
+import { SiGoogledatastudio, SiInstagram  } from "react-icons/si";
 import { ImBook } from "react-icons/im";
 import { TiWeatherPartlySunny } from "react-icons/ti";
 import { PiVideoFill } from "react-icons/pi";
@@ -40,6 +39,20 @@ export default function Page() {
       <section className="space-y-3 shadow-lg inset-shadow-lg ">
   <div className="max-w-screen-xl sm:px-6 sm:py-12 lg:px-8 lg:py-16 flex justify-center shadow-lg inset-shadow-lg">
     <div className="mt-2 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3 ">
+
+    <Link href="/projects/insta" > 
+ 
+ <div className="flex items-start gap-1 text-center justify-center hover:scale-95 shadow-lg inset-shadow-lg">
+ <SiInstagram   size={40} color="#833AB4" className="text-6xl  " />
+   <div>
+     <h2 className="text-md font-bold">Instagram Clone</h2>
+
+     <p className="mt-1 text-sm  ">
+     Capture and Share the World&apos;s Moments
+     </p>
+   </div>
+ </div>
+ </Link>
       
     <Link href="/projects/dairy" > 
  
@@ -73,7 +86,7 @@ export default function Page() {
 
       <Link href="/projects/book" > 
       <div className="flex items-start gap-1 text-center justify-center  hover:scale-95 shadow-lg inset-shadow-lg">
-      <ImBook size={40} color="red" className="text-6xl  " />
+      <ImBook size={35} color="red" className="text-6xl  " />
         <div>
           <h2 className="text-md font-bold">Books-AI.co</h2>
 
@@ -86,7 +99,7 @@ export default function Page() {
 
       <Link href="/projects/weather" > 
       <div className="flex items-start gap-1 text-center justify-center  hover:scale-95 shadow-lg inset-shadow-lg">
-      <TiWeatherPartlySunny size={40} color="blue" className="text-6xl  " />
+      <TiWeatherPartlySunny size={35} color="blue" className="text-6xl  " />
         <div>
           <h2 className="text-md font-bold">WeatherApp.co</h2>
 
@@ -100,7 +113,7 @@ export default function Page() {
     <Link href={"/projects/food"} > 
       <div className="flex items-start gap-1 text-center justify-center hover:scale-95 shadow-lg inset-shadow-lg">
 
-      <MdOutlineFastfood size={40} color="green" className="text-6xl  " />
+      <MdOutlineFastfood size={35} color="green" className="text-6xl  " />
         <div>
           <h2 className="text-md font-bold">FoodDelivery.co</h2>
 
@@ -113,7 +126,7 @@ export default function Page() {
 
       <Link href={"/projects/google"} > 
       <div className="flex items-start gap-1 text-center justify-center  hover:scale-95 shadow-lg inset-shadow-lg ">
-      <FcGoogle size={40} color="orange" className="text-6xl " />
+      <FcGoogle size={35} color="orange" className="text-6xl " />
       
         <div>
           <h2 className="text-md font-bold">GoogleClone.co</h2>

@@ -9,6 +9,7 @@ import { gsap } from 'gsap';
 
 
 
+
 interface NavLinkProps {
   href: string;
   text: string;
@@ -61,17 +62,23 @@ const Navbar: React.FC = () => {
               <NavLink href="/" text="Home" isActive={pathname === '/'} />
               <NavLink href="/about" text="About" isActive={pathname === '/about'} />
               <NavLink href="/social" text="Social" isActive={pathname === '/social'} />
+              <NavLink href="/blog" text="Blog" isActive={pathname === '/blog'} />
               <NavLink href="/contact" text="Contact" isActive={pathname === '/contact'} />
+             
+              
+
             </nav>
             <div className="flex items-center gap-10">
               <AIChatButton />
               <ThemeToggle />
+              
             </div>
           </div>
           <div className="hidden md:block">
             <ToggleButton />
-         
           </div>
+        
+        
        
         </header>
       </div>

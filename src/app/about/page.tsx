@@ -111,6 +111,16 @@ export default function Page() {
     In my free time, I like to work on side projects to keep my skills sharp and try out new tech. Here is a list of my current projects:
   </p>
   <ul className="list-inside list-disc space-y-1 shadow-lg inset-shadow-lg">
+  <li>
+      <a
+        href="https://intsagram-nextjs-clone-eynq.vercel.app/"
+        target="_blank" rel="noopener noreferrer"
+        className="text-primary hover:underline  "
+      >
+        Instagram Clone
+      </a>{" "}
+      - Capture and Share the World&apos;s Moments
+    </li>
     <li>
       <a
         href="https://smartdiary.co"
