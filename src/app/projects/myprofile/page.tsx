@@ -23,7 +23,7 @@ const Page = () => {
               <Image
                 alt="smartdairy"
                 src={myprofile}
-                className="object-center transform scale-100 hover:scale-105 duration-75 absolute inset-0 h-full w-full object-cover" 
+                className="object-center transform scale-100 hover:scale-105 duration-300 absolute inset-0 h-full w-full object-cover" 
                 width={500} height={500}
                 loading="lazy"
               /> 
@@ -35,7 +35,7 @@ const Page = () => {
               <p className="mt-4 text-justify">
               Provide a brief introduction about myself, highlighten my key skills and experiences.
               </p>
-              <Link href="https://dynamic-axolotl-fde4ab.netlify.app/" target="_blank" rel="noreferrer" className="relative flex items-center justify-center w-32 h-[46px] mt-4 rounded
+              <Link href="https://new-gsap-profile.vercel.app/" target="_blank" rel="noreferrer" className="relative flex items-center justify-center w-32 h-[46px] mt-4 rounded
                px-10 py-3 border border-gray-800 text-sm font-medium hover:scale-95 bg-orange-600  shadow-2xl transition-all 
                duration-300 before:absolute before:inset-0 before:border-0 before:border-white before:duration-100 before:ease-linear
                 hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px]">
