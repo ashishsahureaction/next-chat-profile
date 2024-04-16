@@ -16,7 +16,7 @@ const Feature = () => {
                 ultimately captivating users with every interaction.
               </p>
 
-              <p className="mb-0 text-neutral-500 dark:text-neutral-300 text-justify">
+              <p className="mb-0 text-neutral-500 dark:text-neutral-300 text-justify ">
                 Begins with the innovation of intuitive user interfaces and 
                 seamless experiences, where every interaction leaves a lasting impression of satisfaction. Collaborative efforts among teams ensure that diverse perspectives merge harmoniously, leading to the
             creation of robust and elegant solutions. As the project scales, meticulous attention to detail becomes paramount, 
@@ -34,7 +34,7 @@ const Feature = () => {
               alt="image"
               width={400}
               height={600}
-              className="w-full h-full object-cover rounded-lg shadow-lg dark:shadow-black/20"
+              className="w-full h-full object-cover rounded-lg shadow-lg dark:shadow-black/20 hover:scale-95 duration-300 "
               loading="lazy"
             />
           </div>

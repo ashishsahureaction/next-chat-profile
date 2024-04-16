@@ -37,7 +37,7 @@ New Features in React v19 Overview:
         React 19 is poised to redefine the boundaries of what&apos;s possible, offering a suite of enhancements that promise to streamline development processes and elevate user experiences. Here&apos;s what&apos;s on the horizon:
 			<div>
 				 
-      <Image src="/images/eightfive.jpg" width={500} height={500} alt="avatar" className="object-cover mb-4 ml-1 mx-4 rounded-sm " />
+      <Image src="/images/eightfive.jpg" width={400} height={400} alt="avatar" className="object-cover mb-4 ml-1 mx-4 rounded-sm hover:scale-95 duration-300 " />
 				
 			</div>
 		</div>

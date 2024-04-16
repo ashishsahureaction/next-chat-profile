@@ -69,7 +69,7 @@ export default function CommentSection(): JSX.Element {
               onChange={handleMessage}
             />
             <button
-              className="text-white mt-4 bg-orange-600 hover:bg-blue-600 hover:scale-95 font-semibold rounded-md text-sm px-4 py-2.5 w-1/3 focus:outline-none focus:shadow-outline"
+              className="text-white mt-4 bg-orange-600 hover:bg-blue-600 hover:scale-95 duration-300 font-semibold rounded-md text-sm px-4 py-2.5 w-1/3 focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Post Comment

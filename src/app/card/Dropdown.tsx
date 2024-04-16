@@ -25,7 +25,7 @@ export default function Dropdown(props: Props) {
   return (
     <>
       <div className="relative">
-        <button className='flex items-center rounded px-2 pb-2 pt-2.5 text-white text-xs uppercase bg-orange-600 hover:scale-95 '
+        <button className='flex items-center rounded px-2 pb-2 pt-2.5 text-white text-xs uppercase bg-orange-600 hover:scale-95 duration-500'
           onClick={toggle}
         >
           {item.title}

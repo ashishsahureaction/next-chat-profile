@@ -3,7 +3,7 @@ import { AiFillAlert, AiOutlineGoogle } from "react-icons/ai";
 import { SiOpenai, SiMicrosoft, SiNvidia } from "react-icons/si";
 import Image from 'next/image';
 import Link from 'next/link';
-
+import Sweet from './Sweet'
 declare module 'react' {
     interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
       // Extending React's HTMLAttributes to include a custom attribute
@@ -33,28 +33,28 @@ const articles: Article[] = [
       imageUrl: "/images/eightfive.jpg",
       title: "From Render to Reality",
       date: "June 01, 2020",
-      description: "While a component's re-render in React, does not directly translate to a full update of the real DOM. React's efficiency comes from its ability to only update what's necessary in the DOM."
+      description: "While a component's re-render in React, does not directly translate to a full update of the real DOM. React's efficiency comes from its ability to only update what's necessary in the DOM..."
     },
     {
       hreff:"/blog/update",
       imageUrl: "/images/eightfive.jpg",
         title: "React 19 Unveiled",
         date: "March 05, 2024",
-        description: "Exploring the New Frontier   Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri."
+        description: "Exploring the New Frontier   Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri..."
       },
       {
         hreff:"/blog/vllm",
         imageUrl: "/images/eightfive.jpg",
-        title: "World of Visual Language Models",
+        title: "Visual Language Models",
         date: "February 15, 2021",
-        description: "The art of making computers think like humans, Where science fiction meets reality ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri."
+        description: "The art of making computers think like humans, Where science fiction meets reality ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri..."
       },
       {
         hreff:"/blog/render",
       imageUrl: "/images/eightfive.jpg",
         title: "Re-Render in React",
         date: "February 15, 2021",
-        description: "Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri."
+        description: "Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri..."
       },
       {
         hreff:"/blog/render",
@@ -67,7 +67,7 @@ const articles: Article[] = [
     {
       hreff:"/blog/render",
       imageUrl: "/images/eightfive.jpg",
-      title: "Majbbori in life",
+      title: "Majdoori in life",
       date: "January 22, 2021",
       description: "Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri."
     },
@@ -75,9 +75,11 @@ const articles: Article[] = [
   ];
 
 const ArticleCard: React.FC<ArticleCardProps> = ({ imageUrl, title, date, hreff, description }) => (
-    <Link rel="noopener noreferrer" href={hreff} className="max-w-sm mx-auto rounded-md group hover:no-underline  hover:scale-95 ">
-    <Image alt='image picture' width={300} height={300}  className="object-cover w-full rounded h-44" src={imageUrl} />
-    <div className="p-6 space-y-2">
+    <Link rel="noopener noreferrer" href={hreff} className="max-w-sm mx-auto rounded-md group hover:no-underline ">
+      <div className='relative lg:w-[350px] w-full overflow-clip'>
+    <Image alt='image picture' width={300} height={300}  className="object-cover w-full h-44 rounded-md group-hover:scale-125 duration-300 " src={imageUrl} />
+     </div>
+    <div className="p-2 space-y-2">
       <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">{title}</h3>
       <span className="text-xs text-gray-400 dark:text-gray-600">{date}</span>
       <p className='text-justify'>{description}</p>
@@ -100,7 +102,7 @@ const Page: React.FC = () => {
         </section>
      
         <section>
-          <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12">
+          <div className="container max-w-6xl p-6 space-y-6 sm:space-y-12 ">
             {/* Map through the articles to display each one */}
             <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {articles.map((article, index) => (
@@ -108,7 +110,7 @@ const Page: React.FC = () => {
               ))}
             </div>
             <div className="flex justify-center">
-              <button className="text-white mt-4 bg-orange-600 hover:bg-blue-600 hover:scale-95 font-semibold rounded-md text-sm px-4 py-2.5
+              <button className="text-white mt-4 bg-orange-600 hover:bg-blue-600 hover:scale-95 duration-300 font-semibold rounded-md text-sm px-4 py-2.5
                w-1/6 focus:outline-none focus:shadow-outline">Load more posts...</button>
             </div>
           </div>
@@ -124,7 +126,7 @@ const Page: React.FC = () => {
                     <div className="p-6 xl:col-span-3 text-justify">
                         <div className="grid gap-4 md:grid-cols-2">
                             <div className="grid content-center gap-4">
-                                <div className="p-6 rounded shadow-md">
+                                <div className="p-6 rounded shadow-md hover:scale-95 duration-300">
                                     <p>The shift with AI is as big as they come and that&apos;s why it&apos;s so important that we make AI helpful for everyone. With generative AI, we’re taking the next step.</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         <Image src="/images/col.jpg" alt="" width={300} height={300} className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500 dark:bg-gray-500" />
@@ -134,7 +136,7 @@ const Page: React.FC = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="p-6 rounded shadow-md">
+                                <div className="p-6 rounded shadow-md hover:scale-95 duration-300">
                                     <p>Our mission is to ensure that artificial general intelligence—AI systems that are generally smarter than humans—benefits all of humanity and to be widely and fairly shared.</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         <Image src="/images/col1.jpg"  alt="project picture" width={300} height={300} className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500 dark:bg-gray-500" />
@@ -146,7 +148,7 @@ const Page: React.FC = () => {
                                 </div>
                             </div>
                             <div className="grid content-center gap-4">
-                                <div className="p-6 rounded shadow-md ">
+                                <div className="p-6 rounded shadow-md hover:scale-95 duration-300">
                                     <p>My hope is that Hit Refresh will start important conversations and spark new ideas, and that others will share their own hit refresh moments.Technologies will come and go, so you need to be able to both ask and answer the question: What do you do as a company, why do you exist?</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         <Image src="/images/col2.jpg"  alt=""  width={300} height={300} className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500 dark:bg-gray-500" />
@@ -156,7 +158,7 @@ const Page: React.FC = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="p-6 rounded shadow-md ">
+                                <div className="p-6 rounded shadow-md hover:scale-95 duration-300">
                                     <p>Brilliant Minds. Breakthrough Discoveries. Without intellectual honesty, you can&apos;t have a culture that&apos;s willing to tolerate failure because people cling too much to an idea that likely will be bad or isn&apos;t working and they feel like their reputation is tied up in it. They can&apos;t admit failure.</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         <Image src="/images/col3.jpg"  alt="" width={300} height={300} className="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500 dark:bg-gray-500" />
@@ -180,10 +182,10 @@ const Page: React.FC = () => {
                         <p>Doloribus consectetur quasi ipsa quo neque culpa blanditiis ducimus recusandae a veritatis optio cumque, in harum ad nam!</p>
                     </div>
                     <div className="flex flex-row items-center self-center justify-center flex-shrink-0 shadow-md lg:justify-end">
-                        <div className="flex flex-row">
-                            <input type="text" placeholder="example@email.com" className="w-3/5 p-3 rounded-l-lg sm:w-2/3" fdprocessedid="2zc3eu" />
-                            <button type="button" className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-orange-600 dark:text-gray-50  hover:bg-orange-500" fdprocessedid="lhpa6">Subscribe</button>
-                        </div>
+                    <div className="flex flex-row">
+                        
+                        <Sweet/>
+                    </div>
                     </div>
                 </div>
             </section>

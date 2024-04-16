@@ -12,7 +12,7 @@ const Collapsible: React.FC<CollapsibleProps> = ({ title, children }) => {
 
   return (
     <div className="mt-2">
-      <div className="text-md cursor-pointer underline" onClick={() => setIsOpen(!isOpen)}>
+      <div className="text-md cursor-pointer underline " onClick={() => setIsOpen(!isOpen)}>
         {title} <span><svg
           className={`w-5 h-5 fill-current transform transition-transform ${isOpen ? 'rotate-180' : ''}`}
           xmlns="http://www.w3.org/2000/svg"

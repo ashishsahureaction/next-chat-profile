@@ -227,7 +227,7 @@ export default function Page() {
     className="rounded-md shadow-lg inset-shadow-lg"
     loading="lazy"
   />
-  <div className="absolute inset-0 bg-orange-600/60 opacity-0 rounded-md group-hover:opacity-100 flex justify-center items-center transition-opacity duration-1000">
+  <div className="absolute inset-0 bg-orange-600/60 opacity-0 rounded-md group-hover:opacity-100 flex justify-center items-center transition-opacity duration-1000 ">
     <div className="max-w-sm px-2 py-1 space-y-1">
       <div className="space-y-2 text-white font-bold md:tracking-tight md:text-3xl">
         Embark on an Epic River Rafting & Tubing Journey in Rishikesh..!
@@ -255,12 +255,12 @@ export default function Page() {
   </div>
 </div>
 
-      <div className="relative shadow-lg inset-shadow-lg ">
+      <div className="relative shadow-lg inset-shadow-lg hover:scale-95 duration-300 ">
       <div className="sticky top-0 flex flex-col items-center justify-center h-screen  ">
     <Image
       src={tag}
       alt="whitewater river rafting group photo"
-      className="rounded-md"
+      className="rounded-md "
       loading="lazy"
     />
   </div>

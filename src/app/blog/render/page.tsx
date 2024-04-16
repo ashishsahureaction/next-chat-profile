@@ -42,7 +42,7 @@ But calling the render function has some side-effects even if the real DOM is no
     Let&apos;s start with the trigger: whenever there&apos;s a change in a component&apos;s state, props, or context, React schedules a render. This scheduling ensures that updates to the UI happen at an optimal time, prioritizing a smooth user experience over immediate updates.
   <div>
     
-  <Image src="/images/eightfive.jpg" width={500} height={500} alt="avatar" className="object-cover mb-4 ml-1 mx-4 rounded-sm " />
+  <Image src="/images/eightfive.jpg" width={500} height={500} alt="avatar" className="object-cover mb-4 ml-1 mx-4 rounded-sm hover:scale-95 duration-300 " />
 
   </div>
 </div>

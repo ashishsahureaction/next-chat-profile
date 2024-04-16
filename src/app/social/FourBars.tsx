@@ -63,7 +63,7 @@ const Component: React.FC = () => {
             <div className="p-4 md:p-0 gs_reveal gs_reveal_fromRight">
               <Image
                 alt="Employee Management"
-                className="mx-auto rounded-b-xl overflow-hidden object-cover aspect-[3/2] sm:aspect-[16/9] md:aspect-none md:rounded-xl lg:aspect-[16/9]"
+                className="mx-auto rounded-b-xl overflow-hidden object-cover aspect-[3/2] sm:aspect-[16/9] md:aspect-none md:rounded-xl lg:aspect-[16/9] hover:scale-95 duration-300"
                 height={400}
                 src="/images/linkdin.jpg"
                 width={600}
@@ -74,7 +74,7 @@ const Component: React.FC = () => {
             <div className="p-4 md:p-0 gs_reveal gs_reveal_fromLeft">
               <Image
                 alt="Payroll Processing"
-                className="mx-auto rounded-t-xl overflow-hidden object-cover aspect-[3/2] sm:aspect-[16/9] md:aspect-none md:rounded-xl lg:aspect-[16/9]"
+                className="mx-auto rounded-t-xl overflow-hidden object-cover aspect-[3/2] sm:aspect-[16/9] md:aspect-none md:rounded-xl lg:aspect-[16/9] hover:scale-95 duration-300"
                 height={400}
                 src="/images/insta.jpg"
                 width={600}
@@ -97,7 +97,7 @@ const Component: React.FC = () => {
             <div className="p-4 md:p-0 gs_reveal gs_reveal_fromRight">
               <Image
                 alt="Time Tracking"
-                className="mx-auto rounded-t-xl overflow-hidden object-cover aspect-[3/2] sm:aspect-[16/9] md:aspect-none md:rounded-xl lg:aspect-[16/9]"
+                className="mx-auto rounded-t-xl overflow-hidden object-cover aspect-[3/2] sm:aspect-[16/9] md:aspect-none md:rounded-xl lg:aspect-[16/9] hover:scale-95 duration-300"
                 height={400}
                 src="/images/you.jpg"
                 width={600}
@@ -108,7 +108,7 @@ const Component: React.FC = () => {
             <div className="p-4 md:p-0 gs_reveal gs_reveal_fromLeft">
               <Image
                 alt="Reports & Analytics"
-                className="mx-auto rounded-t-xl overflow-hidden object-cover aspect-[3/2] sm:aspect-[16/9] md:aspect-none md:rounded-xl lg:aspect-[16/9]"
+                className="mx-auto rounded-t-xl overflow-hidden object-cover aspect-[3/2] sm:aspect-[16/9] md:aspect-none md:rounded-xl lg:aspect-[16/9] hover:scale-95 duration-300"
                 height={400}
                 src="/images/tiktok.jpg"
                 width={600}

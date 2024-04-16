@@ -26,7 +26,7 @@ function LatestPosts(): JSX.Element {
           {posts.map((post) => (
             <Link key={post.href} href={post.href} passHref>
               <div className='flex gap-4 cursor-pointer'>
-                <Image alt="Cover image" className="rounded overflow-hidden object-cover hover:scale-95" height={120} src={post.imgSrc} width={120} />
+                <Image alt="Cover image" className="rounded overflow-hidden object-cover hover:scale-95 duration-300" height={120} src={post.imgSrc} width={120} />
                 <div>
                   <h3 className="font-bold hover:underline">{post.title}</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Posted on {post.date}</p>

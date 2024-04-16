@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link'
+import Marquee from 'react-fast-marquee';
 
 
 const TimelineOne: React.FC = () => {
@@ -90,7 +91,7 @@ const TimelineOne: React.FC = () => {
       </div>
 
       
-<section className="p-4 my-6 md:p-8  ml-28 mr-28 js-content-opacity">
+<Marquee className="p-4 my-6 md:p-8  ml-28 mr-28 js-content-opacity">
 	<div className="container grid grid-cols-1 gap-6 m-4 mx-auto md:m-0 md:grid-cols-2 xl:grid-cols-3 js-content-opacity">
 		<div className="flex overflow-hidden rounded-lg bg-gray-700 dark:bg-slate-200 text-gray-100 dark:text-gray-800">
 			<div className="flex items-center justify-center px-4 bg-orange-600 dark:bg-orange-600 text-gray-800 dark:text-gray-100">
@@ -166,7 +167,8 @@ const TimelineOne: React.FC = () => {
 			</div>
 		</div>
 	</div>
-</section>
+</Marquee>
+
 </section>
 
   );

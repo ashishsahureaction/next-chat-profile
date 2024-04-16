@@ -39,16 +39,16 @@ const GalleryOne: React.FC = () => {
       </div>
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
-          <div className="bg-white p-5 rounded-lg shadow-lg">
+          <div className="bg-white p-5 rounded-lg shadow-lg ">
             <Image
               src={selectedImage.src}
               alt={selectedImage.alt}
               width={600} // Adjust based on your needs
               height={600} // Adjust based on your needs
-              className="rounded-md"
+              className="rounded-md hover:scale-105 duration-300 "
             />
             <button
-              className="mt-4 px-4 py-2 bg-orange-600 text-white rounded hover:bg-red-700"
+              className="mt-4 px-4 py-2 bg-orange-600 text-white rounded hover:bg-red-700 hover:scale-95"
               onClick={() => setSelectedImage(null)}
             >
               Close

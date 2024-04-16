@@ -32,7 +32,7 @@ const Page: React.FC = () => {
         At the intersection of vision and language, VLMs stand as a testament to the power of combining disparate sources of information. These models excel in tasks such as image captioning, visual question answering, and even generating videos from textual descriptions. The essence of VLMs lies in their ability to seamlessly integrate visual and textual data, creating a symbiotic relationship between what is seen and what is described.	
         		<div>
 				 
-		<Image src="/images/eightfive.jpg" width={950} height={950} alt="avatar" className="object-cover mb-4 ml-1 mx-4 rounded-sm " />
+		<Image src="/images/eightfive.jpg" width={950} height={950} alt="avatar" className="object-cover mb-4 ml-1 mx-4 rounded-sm  hover:scale-95 duration-300" />
 				
 			</div>
 		</div>

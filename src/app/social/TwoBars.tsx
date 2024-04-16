@@ -10,7 +10,7 @@ export default function Component() {
       <div className=" py-12 lg:py-16 ">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 md:grid-cols-2 lg:gap-8 xl:grid-cols-4">
-            <Link href="/card/cencora">  <div className="flex items-center space-x-4 hover:scale-95  ">
+            <Link href="/card/cencora">  <div className="flex items-center space-x-4 hover:scale-95 duration-500  ">
               <Image
                 alt="Logo"
                 className="aspect-square rounded-lg overflow-hidden object-cover"
@@ -27,7 +27,7 @@ export default function Component() {
           
             <Link href="/card/future"> 
 
-            <div className="flex items-center space-x-4 hover:scale-95">
+            <div className="flex items-center space-x-4 hover:scale-95 duration-500">
               <Image
                 alt="Logo"
                 className="aspect-square rounded-lg overflow-hidden object-cover"
@@ -42,7 +42,7 @@ export default function Component() {
             </div></Link>
 
             <Link href="/card/skylives"> 
-            <div className="flex items-center space-x-4 hover:scale-95">
+            <div className="flex items-center space-x-4 hover:scale-95 duration-500">
               <Image
                 alt="Logo"
                 className="aspect-square rounded-lg overflow-hidden object-cover"
@@ -57,7 +57,7 @@ export default function Component() {
             </div></Link>
 
             <Link href="/card/hdfc"> 
-            <div className="flex items-center space-x-4 hover:scale-95">
+            <div className="flex items-center space-x-4 hover:scale-95 duration-500">
             <Image
   alt="Logo"
   className="aspect-square rounded-lg overflow-hidden object-cover"
